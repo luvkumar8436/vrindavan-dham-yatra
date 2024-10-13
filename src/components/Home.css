@@ -1,0 +1,63 @@
+.home-container img {
+    height: 40vw;
+}
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.home-container {
+  position: relative;
+ 
+}
+
+
+
+
+
+.homepage-text-container{
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.dancing-script-subheading {
+font-family: "Dancing Script", cursive;
+font-optical-sizing: auto;
+font-weight: 600;
+font-style: normal;
+color: white
+
+}
+
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: -webkit-linear-gradient(#070607, #fd03e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}

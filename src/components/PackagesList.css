@@ -1,0 +1,31 @@
+.package-section{
+    margin: 40px;
+}
+.package-section h2{
+    text-align: center;
+    color: brown;
+    font-size: 3rem;
+}
+.break-line{
+    height: 2px;
+    background: linear-gradient(217deg, rgba(62, 241, 7, 0.8), rgba(248, 4, 4, 0) 70.71%),
+            linear-gradient(127deg, #ff00d4cc, #06456900 70.71%),
+            linear-gradient(336deg, #0f0feccc, #f0151500 70.71%);
+    margin: 0 25vw 40px 25vw;
+}
+#first{
+    color: #ff00d4cc;
+}
+#second{
+    color: #0f0feccc;
+}
+#third{
+    color: rgba(62, 241, 7, 0.8);
+}
+
+.package-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 5vh;
+}

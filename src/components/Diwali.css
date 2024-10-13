@@ -1,0 +1,52 @@
+p{
+    color: black;
+}
+
+.diwali-container{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("./images/beautiful-diya-in-a-decorative-rangoli-background-for-diwali-indian-festival-sr02102401.jpg");
+}
+.diwali-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50vw;
+    background: inherit;
+    background-attachment: fixed;
+  filter: blur(5px);
+
+}
+
+.diwali-inside-container{
+    margin: 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 50vw;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+.diwali-inside-container h2{
+    font-size: 3rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.line-break{
+    height: 2vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(85,106,162,1) 50%, rgba(0,212,255,1) 100%);
+
+}
+
