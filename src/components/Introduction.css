@@ -9,36 +9,9 @@
 }
   
 .protest-strike-regular {
-    font-family: "Protest Strike", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.intro-container{
-  margin: 40px 80px;
-}
-
-.intro-container .intro-heading{
-    text-align: center;
-}
-
-.intro-summary{
-  font-family: sans-serif;
-  margin: 30px;
-}
-
-
-.intro-summary .radharani-image{
-  float: right;
-  height: 300px;
-  width: 200px;
-  margin-left: 30px;
-  border-radius: 10px;
-}
-
-.intro-summary{
-  overflow: auto;
-  font-size: 1.3rem;
-
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .diwali-image{
@@ -48,9 +21,51 @@
   border: 2px solid black;
 }
 
+
+.summary-container{
+  font-family: sans-serif;
+  margin: 30px;
+  /* border: 2px solid brown; */
+}
+
+.intro-container{
+  margin: 40px 80px;
+}
+
+.intro-container .intro-heading{
+    text-align: center;
+}
+
+.radharani-image img{
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+
+}
+
+.radharani-image{
+  width: 40%;
+  /* border: 2px solid black; */
+  float: right;
+  text-align: center;
+}
+
+.summary-container{
+  overflow: auto;
+  font-size: 1.3rem;
+}
+
+
 .intro-heading span{
   background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
+
+.intro-summary{
+  width: 60%;
+  display: inline-block;
+  /* border: 2px solid green; */
+}
+
