@@ -89,7 +89,11 @@ const Home = () => {
       </Carousel>
 
       <div className='homepage-text-container'>
-        <h1 className='protest-strike-regular' >Welcome to the Divine Land of Mathura & Vrindavan</h1>
+        <h1 className='protest-strike-regular' >
+          <span>
+          Welcome to Mathura & Vrindavan
+          </span>
+        </h1>
         <p className='dancing-script-subheading'>Experience the spiritual charm of Lord Krishna's birthplace</p>
       </div>
       

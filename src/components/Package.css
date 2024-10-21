@@ -11,17 +11,10 @@
     border-radius:  10px 10px 0 0;
 }
 
-.enquiry{
-    float: right;
-}
-
-.info{
-    float: right;
-}
-
 .tour-places, .rating, .duration{
     font-size: 0.6rem;
-    margin: 5px;
+    height: 1.5rem;
+    margin: 2px;
 }
 .rating{
     float: right;
@@ -30,10 +23,25 @@
     float: left;
 }
 .package-container-info{
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    /* border: 2px solid rgb(247, 9, 9); */
 }
 .tour-headline{
-    font-size: 0.8 rem;
+    font-size: 1rem;
     clear: both;
-    height: 3rem;
+    height: 2.5rem;
+}
+
+.tour-subinfo-container{
+    /* vertical-align: bottom; */
+    /* border: 2px solid green; */
+    overflow: auto;
+    margin: 7px 7px;
+    margin-top: auto;
+}
+.tour-subheading-container{
+    /* border: 2px solid black; */
+    margin: 10px 7px;
 }

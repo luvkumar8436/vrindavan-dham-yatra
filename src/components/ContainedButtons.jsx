@@ -6,7 +6,7 @@ import './ContainedButtons.css'
 export default function ContainedButtons(props) {
   return (
     <Stack className={props.class} >
-      <Button style={{background:"purplevoilet"}} variant="contained" href="#contained-buttons">
+      <Button style={{fontSize:'0.7rem'}} variant="contained" href="#contained-buttons">
         {props.text}
       </Button>
     </Stack>

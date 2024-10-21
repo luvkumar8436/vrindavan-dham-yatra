@@ -1,9 +1,11 @@
 import React from "react";
+import './DemoCarousel'
+import DemoCarousel from "./DemoCarousel";
 
 const TouristPackages = () => {
     return (
         <div>
-            All available packages.
+           <DemoCarousel />
         </div>
     )
 }

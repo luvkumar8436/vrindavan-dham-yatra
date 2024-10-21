@@ -27,7 +27,7 @@
 
 .home-container {
   position: relative;
- 
+
 }
 
 
@@ -43,21 +43,20 @@
 
 
 
+
+
 .dancing-script-subheading {
 font-family: "Dancing Script", cursive;
-font-optical-sizing: auto;
-font-weight: 600;
-font-style: normal;
-color: white
+color: black
 
 }
 
-.protest-strike-regular {
+.protest-strike-regular span{
   font-family: "Protest Strike", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: -webkit-linear-gradient(#070607, #fd03e8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+
 
 }
