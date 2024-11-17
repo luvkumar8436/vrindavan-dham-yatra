@@ -1,0 +1,29 @@
+.container{
+    background-image: linear-gradient( 90deg,rgba(30,30,45,1) 0%, rgba(125,125,152,0.75) 37%, rgba(148,148,172,0.15) 49%, rgba(255,255,255,0) 58%),   url("https://www.tripclap.com/uploads/package_desktop_banner/mathura-vrindavan_hero-image1718187930-7675e.png") ;
+    /* background-image: url("https://www.tripclap.com/uploads/package_desktop_banner/mathura-vrindavan_hero-image1718187930-7675e.png") ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-container p{
+    color: white;
+    width: 50%;
+}
+
+.sub-container{
+    padding: 10vh 5vw;
+    width: 40%;
+}
+
+.sub-container button{
+    color: white;
+    background: inherit;
+    border-radius: 50px;
+    padding: 10px;
+}

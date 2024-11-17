@@ -6,6 +6,9 @@ import AboutUs from './components/AboutUs';
 import FamousTemples from './components/FamousTemples';
 import ContactUs from './components/ContactUs';
 import PackagePage from './components/PackagePage'
+import Footer from './components/Footer';
+import Query from './components/Queries';
+
 
 function App() {
   return (
@@ -18,9 +21,9 @@ function App() {
           <Route path="/famous-temples/:templeName" element={<FamousTemples />} />
           <Route path="/tourist-packages/:packageName" element={<PackagePage />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="" />
-          <Route path="" />
         </Routes>
+        <Query />
+        <Footer />
       </div>
     </Router>
   );

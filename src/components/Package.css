@@ -1,6 +1,6 @@
 .package{
-    height: 80vh;
-    width: 25vw;
+    height: 25rem;
+    width: 20vw;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

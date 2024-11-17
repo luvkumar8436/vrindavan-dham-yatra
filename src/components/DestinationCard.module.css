@@ -1,0 +1,22 @@
+.container{
+    height: 10rem;
+    width: 15rem;
+    position: relative;
+}
+
+.container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.container > span{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}

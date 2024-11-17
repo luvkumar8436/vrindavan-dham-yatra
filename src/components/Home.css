@@ -1,4 +1,5 @@
-.home-container img {
+
+.carousel-inner {
     height: 40vw;
 }
 .pt-serif-regular {
@@ -27,7 +28,6 @@
 
 .home-container {
   position: relative;
-
 }
 
 
@@ -57,6 +57,5 @@ color: black
   font-style: normal;
   color: white;
   text-shadow: 2px 2px 4px black;
-
-
 }
+

@@ -1,0 +1,14 @@
+.destination-container{
+    display: flex;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.container{
+    margin: 10vh 5vw;
+}
+
+.container h2{
+    text-align: center;
+    margin: 5vh 5vw;
+}

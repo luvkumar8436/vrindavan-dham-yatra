@@ -1,0 +1,17 @@
+.footer-container{
+    padding: 5vh 10vw;
+    font-size: 0.85rem;
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr 1fr 1.5fr;
+    column-gap: 2rem;
+}
+
+.footer-container h5{
+    margin: 1rem 0 2.5rem 0;
+}
+.footer-container li{
+    list-style-type: none;
+    margin-left: -2rem;
+    margin-bottom: 1rem;
+
+}

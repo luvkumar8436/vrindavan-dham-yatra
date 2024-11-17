@@ -1,6 +1,7 @@
 import React from "react";
 import "./Package.css"
 import ContainedButtons from "./ContainedButtons";
+import { Link } from "react-router-dom";
 
 const Package = (props) => {
     return (
@@ -14,8 +15,8 @@ const Package = (props) => {
                 </div>
                 <div className="tour-subinfo-container">
                     <div className="tour-places" >{props.tourPlaces}</div>
-                    <div ><ContainedButtons class="enquiry"  text="Enquire Now" /></div>
-                    <div ><ContainedButtons class="info" text="Know More" /></div>
+                    <div ><Link  ><ContainedButtons class="enquiry"  text="Enquire Now" /></Link></div>
+                    <div ><Link to={"/tourist-packages/"+props.tourHeadline } state={{ duration: props.duration , places: props.tourPlaces }} > <ContainedButtons class="info" text="Know More" /></Link></div>
                 </div>  
             </div>
         </div>

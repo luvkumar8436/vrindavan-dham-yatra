@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from './images/Vrindavan_Dham_Yatra_Logo_Cleaned-removebg-preview.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">VrindavanDhamYatra</Link>
-        <button className="menu-toggle" onClick={toggleMenu}>
-          &#9776;
-        </button>
+        <Link to="/"> <img className='logo' alt='website logo' src={logo} ></img> </Link>
       </div>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>

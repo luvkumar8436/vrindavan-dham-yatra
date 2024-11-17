@@ -4,57 +4,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import PackagesList from './PackagesList';
 import Diwali from './Diwali';
 import Introduction from './Introduction';
+import Video from './Video';
+import Destinations from './Destinations';
+import Review from './TestimonialSection';
+import { templeImages } from './templeImages';
 
-
-const data = [
-  {
-    image:require('./images/indian-temple-g085a80a15_1920-1.jpg'), 
-    caption:"Caption",
-    description:"Description Here"
-   },
-  {
-    image:require('./images/mathura12.webp'), 
-    caption:"Caption",
-    description:"Description Here"
-   } ,
-  
-   {
-     image:require('./images/DSC_1170.jpg'), 
-     caption:"Caption",
-     description:"Description Here"
-    },
-    {
-      image:require('./images/prem-mandir7.jpg'), 
-      caption:"Caption",
-      description:"Description Here"
-     },
-     {
-      image:require('./images/pexels-photo-5413600.jpeg'), 
-      caption:"Caption",
-      description:"Description Here"
-     },
-     {
-      image:require('./images/Vrindavan__Overview.avif'), 
-      caption:"Caption",
-      description:"Description Here"
-     },
-     {
-      image:require('./images/Vaishno-Devi-Dham-Vrindavan.jpg'), 
-      caption:"Caption",
-      description:"Description Here"
-     },
-     {
-      image:require('./images/Chhatris-of-Barsana-Uttar-Pradesh.webp'), 
-      caption:"Caption",
-      description:"Description Here"
-     },
-     {
-      image:require('./images/free-photo-of-people-at-shri-radha-rani-temple-in-barsana.jpeg'), 
-      caption:"Caption",
-      description:"Description Here"
-     },
-   
-]
 
 
 const Home = () => {
@@ -73,7 +27,7 @@ const Home = () => {
        touch={true}
        interval={1000}
        >
-        {data.map((slide, i) => {
+        {templeImages.map((slide, i) => {
           return (
             <Carousel.Item>        
           <img
@@ -100,6 +54,9 @@ const Home = () => {
       <Introduction />
       <Diwali />
       <PackagesList />
+      <Destinations />
+      <Video />
+      <Review />
     </div>
   );
 };

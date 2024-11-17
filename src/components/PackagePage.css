@@ -1,0 +1,45 @@
+.slider-container{
+    height: 50vh;
+    width: 50vw;
+    margin: 2vh 0;
+}
+.plan-info-container{
+    width: 50vw;
+}
+.package-page-container{
+    margin: 5rem 5rem;
+    display: inline-block;
+}
+
+.tour-heading{
+    color: rgb(154, 23, 166);
+    margin: 4vh 0;
+}
+.day-box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.day-box p{
+    color: rgb(154, 23, 166);
+    margin: 0;
+}
+
+.line-break{
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 5px 0 10px 0;
+}
+
+.heading{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: rgb(154, 23, 166);
+    margin-bottom: 10px;
+}
+
+.inclusion-container{
+    margin: 2vh 0;
+}

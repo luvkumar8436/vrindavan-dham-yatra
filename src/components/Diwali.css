@@ -4,7 +4,7 @@ p{
 
 .diwali-container{
     width: 100%;
-    height: 60vh;
+    height: 30rem;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,11 +34,32 @@ p{
     width: 50vw;
     padding: 2rem;
     font-size: 1.2rem;
+    /* border: 2px solid black; */
 }
 
-.diwali-inside-container h2{
-    font-size: 2rem;
+.diwali-heading{
+    font-size: 3rem;
     color: white;
     text-shadow: 1px 1px 2px black;
+    width: 40%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
 }
 
+.diwali-para{
+    width: 40%;
+    float: right;
+    text-align: center;
+    height: 100%;
+    padding: 50px 0;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.offer-btn{
+    margin: 2rem 0.5rem;
+}
