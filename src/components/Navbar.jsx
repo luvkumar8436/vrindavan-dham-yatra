@@ -15,8 +15,8 @@ const Navbar = () => {
       <ul className={styles["links-container"]}>
         <li>Home</li>
         <li>About Us</li>
-        <li>
-          <span>Packages From</span>
+        <li className={styles["dropdown"]} >
+          <div className={styles["dropbtn"]} >Packages From</div>
           <div className={styles["dropdown-container"]} >
             <p>Hyderabad</p>
             <p>Banglore</p>
@@ -25,8 +25,8 @@ const Navbar = () => {
             <p>Gurgaon</p>
           </div>
         </li>
-        <li>
-          <span>Packages</span>
+        <li className={styles["dropdown"]} >
+        <div className={styles["dropbtn"]} >Packages</div>
           <div className={styles["dropdown-container"]} >
             <p>One day Mathura Vrindavan Yatra</p>
             <p>Weekend Special Vrindavan Dhan Yatra</p>
