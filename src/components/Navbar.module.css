@@ -1,43 +1,58 @@
 .navbar-container{
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px ;
+  /* border: 1px solid green; */
+  height: 50px;
+  padding: 0 150px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.logo{
-  height: 20px;
-  width: 20px;
-  border: 2px solid black;
+.brand-logo{
+  padding: 10px;
 }
-
-
 .links-container{
   display: flex;
   column-gap: 30px;
   margin-right: 40px;
+  height: 100%;
+  padding-top: 10px;
 }
 
 .links-container li{
-  display: inline-block;
+  position: relative;
 }
 .links-container li:hover{
   color: blueviolet;
 }
 
 .dropdown-container{
-  padding: 10px;
+  padding: 0px;
   margin: 0;
   display: none;
   z-index: 1;
   position: absolute;
   background-color: white;
-  top: 30px;
+  top: 40px;
+  width: 300px;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-
 .links-container li:hover .dropdown-container{
   /* position: absolute; */
   display: block;
+}
+.dropdown-container p{
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 0.8rem;
+}
+.dropdown-container p:hover{
+  background-color: blueviolet;
+  color: white ;
+}
+
+@media (max-width: 1080px) {
+  .links-container li{
+    font-size: 0.8rem;
+  }
 }

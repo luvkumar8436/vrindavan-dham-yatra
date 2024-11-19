@@ -1,0 +1,9 @@
+.logo{
+    transform: scale(1);
+}
+
+@media (max-width: 1080px) {
+    .logo{
+        transform: scale(0.7);
+    }
+  }

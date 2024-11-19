@@ -80,8 +80,13 @@ const data = [
 const PackagesList = () => {
     return (
         <div className="package-section" >
-            <h2><span id="first">Best</span> <span id="second">Seller</span> <span id="third">Packages</span></h2>
-            <div className="break-line"></div>
+            <div className="bundle-container">
+                <div className="bundle">
+                    <h2>Best selling Packages</h2>
+                    <div className="break-line"></div>
+                </div>
+            </div>
+            
             <div className="package-container" >
                 {data.map( (item, key) => 
                     <Package

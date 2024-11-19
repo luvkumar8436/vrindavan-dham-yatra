@@ -2,13 +2,15 @@
     display: flex;
     row-gap: 2rem;
     column-gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 .container{
-    margin: 10vh 5vw;
+    margin: 10rem 10%;
 }
 
 .container h2{
     text-align: center;
-    margin: 5vh 5vw;
 }

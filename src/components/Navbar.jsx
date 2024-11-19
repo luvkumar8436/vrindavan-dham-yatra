@@ -14,17 +14,6 @@ const Navbar = () => {
       </div>
       <ul className={styles["links-container"]}>
         <li>Home</li>
-        <li>About Us</li>
-        <li>
-          <span>Packages From</span>
-          <div className={styles["dropdown-container"]} >
-            <p>Hyderabad</p>
-            <p>Banglore</p>
-            <p>Pune</p>
-            <p>Chandigarh</p>
-            <p>Gurgaon</p>
-          </div>
-        </li>
         <li>
           <span>Packages</span>
           <div className={styles["dropdown-container"]} >
@@ -39,6 +28,17 @@ const Navbar = () => {
             <p>2 Days Delhi & Agra Tour</p>
           </div>
         </li>
+        <li>
+          <span>Packages From</span>
+          <div className={styles["dropdown-container"]} >
+            <p>Hyderabad</p>
+            <p>Banglore</p>
+            <p>Pune</p>
+            <p>Chandigarh</p>
+            <p>Gurgaon</p>
+          </div>
+        </li>
+        <li>About Us</li>
         <li>Contact Us</li>
       </ul>
     </div>

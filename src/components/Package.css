@@ -1,6 +1,6 @@
 .package{
     height: 25rem;
-    width: 20vw;
+    width: 15rem;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -13,7 +13,7 @@
 
 .tour-places, .rating, .duration{
     font-size: 0.6rem;
-    height: 1.5rem;
+    height: 2rem;
     margin: 2px;
 }
 .rating{
@@ -29,9 +29,9 @@
     /* border: 2px solid rgb(247, 9, 9); */
 }
 .tour-headline{
-    font-size: 1rem;
     clear: both;
-    height: 2.5rem;
+    font-size: 0.8rem;
+    height: 1.5rem;
 }
 
 .tour-subinfo-container{
@@ -45,3 +45,4 @@
     /* border: 2px solid black; */
     margin: 10px 7px;
 }
+

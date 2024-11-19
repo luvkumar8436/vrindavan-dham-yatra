@@ -1,31 +1,32 @@
 .package-section{
-    margin: 40px;
+    margin: 20px 5%;
+}
+
+.bundle-container{
+    text-align: center;
+}
+.bundle{
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 .package-section h2{
-    text-align: center;
-    color: brown;
+    color: blueviolet;
     font-size: 3rem;
+    display: inline-block;
 }
 .break-line{
-    height: 2px;
-    background: linear-gradient(217deg, rgba(62, 241, 7, 0.8), rgba(248, 4, 4, 0) 70.71%),
-            linear-gradient(127deg, #ff00d4cc, #06456900 70.71%),
-            linear-gradient(336deg, #0f0feccc, #f0151500 70.71%);
-    margin: 0 25vw 40px 25vw;
+    height: 1px;
+    background: purple;
 }
-#first{
-    color: #ff00d4cc;
-}
-#second{
-    color: #0f0feccc;
-}
-#third{
-    color: rgba(62, 241, 7, 0.8);
-}
+
 
 .package-container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 5vh;
+    flex-flow: row wrap;
+    justify-content: start;
+    column-gap: 40px;
+    row-gap: 30px;
+    padding: 12px;
 }
