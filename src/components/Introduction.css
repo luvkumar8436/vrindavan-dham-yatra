@@ -50,16 +50,19 @@
 
 .summary-container{
   overflow: auto;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
+.animation-text{
+  font-size: 4rem;
+  color: blueviolet;
+}
 
 .intro-heading span{
   background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .intro-summary{
@@ -67,3 +70,25 @@
   display: inline-block;
 }
 
+@media (max-width: 1100px){
+  .summary-container{
+    font-size: 0.9rem;
+  }
+  .radharani-image img{
+    height: 200px;
+    width: 150px;
+  }
+  .animation-text{
+    font-size: 2rem;
+  }
+
+  .intro-container h2{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 950px){
+ .summary-container{
+  width: 90%;
+ } 
+}

@@ -1,24 +1,27 @@
 .navbar-container{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr;
   justify-content: space-between;
   /* border: 1px solid green; */
   height: 50px;
-  padding: 0 150px;
+  padding: 0 10%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .brand-logo{
-  padding: 10px;
+  padding-top: 10px;
 }
 .links-container{
-  display: flex;
-  column-gap: 30px;
-  margin-right: 40px;
+  display: grid;
+  grid-column-start: 3;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+  column-gap: 5px;
   height: 100%;
   padding-top: 10px;
 }
 
 .links-container li{
   position: relative;
+  justify-self: center;
 }
 .links-container li:hover{
   color: blueviolet;
@@ -51,8 +54,33 @@
   color: white ;
 }
 
-@media (max-width: 1080px) {
-  .links-container li{
+@media (max-width: 1430px) {
+  .navbar-container{
+    grid-template-columns: 1fr 2fr 4fr;
+  }
+}
+
+@media (max-width: 1150px){
+  .navbar-container{
+    grid-template-columns: 1fr 1fr 15fr;
+  }
+  .links-container{
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 750px){
+  .navbar-container{
+    grid-template-columns: 1fr 20fr;
+    padding: 0 5px;
+  }
+  .links-container{
+    grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
     font-size: 0.8rem;
   }
+
+}
+
+@media (max-width: 520px){
+  
 }

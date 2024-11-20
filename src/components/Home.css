@@ -54,8 +54,14 @@ color: black
 .protest-strike-regular span{
   font-family: "Protest Strike", sans-serif;
   font-weight: 400;
+  font-size: 3rem;
   font-style: normal;
   color: white;
   text-shadow: 2px 2px 4px black;
 }
 
+@media (max-width: 900px){
+  .homepage-text-container span{
+    font-size: 1.5rem;
+  }
+}

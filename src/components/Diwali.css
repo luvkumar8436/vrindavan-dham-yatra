@@ -33,20 +33,20 @@ p{
     height: 100%;
     width: 50vw;
     padding: 2rem;
-    font-size: 1.2rem;
-    /* border: 2px solid black; */
+    font-size: 1.5rem;
 }
 
 .diwali-heading{
     font-size: 3rem;
-    color: white;
-    text-shadow: 1px 1px 2px black;
     width: 40%;
     height: 100%;
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
     /* border: 2px solid red; */
+    font-family: "Protest Strike", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
 .diwali-para{
@@ -54,7 +54,6 @@ p{
     float: right;
     text-align: center;
     height: 100%;
-    padding: 50px 0;
     /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
@@ -63,3 +62,22 @@ p{
 .offer-btn{
     margin: 2rem 0.5rem;
 }
+
+@media (max-width: 1200px){
+    .diwali-heading{
+        font-size: 2rem;
+    }
+    .diwali-para{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px){
+    .diwali-heading{
+        font-size: 1rem;
+    }
+    .diwali-para{
+        font-size: 0.7rem;
+    }
+}
+

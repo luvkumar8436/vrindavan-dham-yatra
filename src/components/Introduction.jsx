@@ -25,7 +25,7 @@ const Introduction = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            style={{ fontSize: '4em' , color: 'blueviolet' }}
+            className="animation-text"
           />
         </div>
 

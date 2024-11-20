@@ -12,6 +12,9 @@ const Navbar = () => {
       <div className={styles["brand-logo"]}>
         <Logo className={styles["logo"]} />
       </div>
+      <div className={styles["navbar-icon"]} >
+        
+      </div>
       <ul className={styles["links-container"]}>
         <li>Home</li>
         <li>
@@ -38,8 +41,8 @@ const Navbar = () => {
             <p>Gurgaon</p>
           </div>
         </li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+        <li>About</li>
+        <li>Contact</li>
       </ul>
     </div>
   );

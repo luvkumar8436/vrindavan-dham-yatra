@@ -1,5 +1,5 @@
 .footer-container{
-    padding: 5vh 10vw;
+    padding: 10px 10%;
     font-size: 0.85rem;
     display: grid;
     grid-template-columns: 1.5fr 0.7fr 1fr 1.5fr;
@@ -7,7 +7,7 @@
 }
 
 .footer-container h5{
-    margin: 1rem 0 2.5rem 0;
+    margin: 2rem 0;
 }
 .footer-container li{
     list-style-type: none;
@@ -18,4 +18,24 @@
 
 .about-us p{
     margin: 20px 0;
+}
+
+
+@media (max-width: 1040px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .useful-links{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .tour-packages{
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+    .contact-us{
+        grid-row: 3 / span 1;
+    }
 }

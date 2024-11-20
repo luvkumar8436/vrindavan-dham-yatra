@@ -73,7 +73,6 @@ const PackagePage = () => {
                 </div>
                   
             </div>
-
         </div>
         
     )
