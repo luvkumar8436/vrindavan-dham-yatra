@@ -12,13 +12,17 @@ const Navbar = () => {
       <div className={styles["brand-logo"]}>
         <Logo className={styles["logo"]} />
       </div>
-      <div className={styles["navbar-icon"]} >
-        
+      <div className={styles["nav-icon"]}>
+        <div className={styles["outer-div"]}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <ul className={styles["links-container"]}>
         <li>Home</li>
         <li>
-          <span>Packages</span>
+          <span>Packages<div className={[styles["arrow"]]}></div></span>
           <div className={styles["dropdown-container"]} >
             <p>One day Mathura Vrindavan Yatra</p>
             <p>Weekend Special Vrindavan Dhan Yatra</p>
@@ -32,7 +36,7 @@ const Navbar = () => {
           </div>
         </li>
         <li>
-          <span>Packages From</span>
+          <span>Packages From<div className={[styles["arrow"]]}></div></span>
           <div className={styles["dropdown-container"]} >
             <p>Hyderabad</p>
             <p>Banglore</p>
