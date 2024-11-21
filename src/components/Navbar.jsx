@@ -3,26 +3,40 @@
 // import logo from './images/Vrindavan_Dham_Yatra_Logo_Cleaned-removebg-preview.png';
 import styles from "./Navbar.module.css";
 import Logo from "./Logo";
+import { useState } from "react";
 
 const Navbar = () => {
   
+  const [isOpen , setOpen] = useState(false);
+  
+  const hidden = isOpen ? "" : "hidden";
 
+  function handleNavClick(event){
+    console.log(event)
+    setOpen(!isOpen);
+  }
   return (
     <div className={styles["navbar-container"]}>
       <div className={styles["brand-logo"]}>
         <Logo className={styles["logo"]} />
       </div>
-      <div className={styles["nav-icon"]}>
-        <div className={styles["outer-div"]}>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div  className={styles["nav-icon"]}>
+        <div onClick={handleNavClick} className={styles["outer-div"]}>
+          {
+            !isOpen ? 
+            <>
+              <div></div>
+              <div></div>
+              <div></div>
+            </>
+             : <>&#x2716;</>
+          }
         </div>
       </div>
-      <ul className={styles["links-container"]}>
+      <ul className={`${styles["links-container"]} ${styles[`${hidden}`]}`}>
         <li>Home</li>
         <li>
-          <span>Packages<div className={[styles["arrow"]]}></div></span>
+          <span>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div className={styles["dropdown-container"]} >
             <p>One day Mathura Vrindavan Yatra</p>
             <p>Weekend Special Vrindavan Dhan Yatra</p>
@@ -36,7 +50,7 @@ const Navbar = () => {
           </div>
         </li>
         <li>
-          <span>Packages From<div className={[styles["arrow"]]}></div></span>
+          <span>Packages From<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div className={styles["dropdown-container"]} >
             <p>Hyderabad</p>
             <p>Banglore</p>

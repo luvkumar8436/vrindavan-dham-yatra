@@ -27,9 +27,8 @@
   color: blueviolet;
 }
 .links-container li:hover .arrow{
-  border: solid blueviolet;
-  border-width: 0 2px 2px 0;
-  transform: rotate(-135deg);
+
+  transform: rotate(270deg);
   margin: 0 3px;
 }
 .dropdown-container{
@@ -59,10 +58,9 @@
   color: white ;
 }
 .nav-icon{
-  border: 1px solid green;
   align-content: center;
   display: none;
-  padding: 5px;
+  padding: 15px;
 }
 .outer-div{
   float: right;
@@ -75,18 +73,17 @@
   width: 25px;
 }
 .arrow {
-  border: solid black;
-  border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
   margin: 3px;
-  transform: rotate(45deg);
+  font-size: 10px;
+  transform: rotate(90deg);
 }
 
 
 @media (max-width: 1600px) {
   .navbar-container{
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 0.8fr 2fr;
   }
 }
 @media (max-width: 1270px){
@@ -113,18 +110,18 @@
     grid-template-columns: 1fr 6fr 9fr 1fr 1fr;
   }
 }
-@media (max-width: 617px){
+@media (max-width: 628px){
   .nav-icon{
     display: block;
   }
-  .links-container{
+  .hidden{
     display: none;
   }
-  /* .links-container{
+  .links-container{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     z-index: 1;
     background-color: white;
     color: black;
-  } */
+  }
 }
