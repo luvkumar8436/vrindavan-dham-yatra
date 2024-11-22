@@ -1,83 +1,39 @@
-p{
-    color: black;
-}
-
-.diwali-container{
+.diwali-main-container{
     width: 100%;
-    height: 30rem;
-    position: relative;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    align-content: center;
     position: relative;
-    background-image: url("./images/beautiful-diya-in-a-decorative-rangoli-background-for-diwali-indian-festival-sr02102401.jpg");
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/052/106/592/non_2x/happy-new-year-2025-illustration-with-golden-typography-lettering-and-christmas-ball-on-falling-confetti-background-winter-holiday-design-for-flyer-banner-greeting-card-celebration-poster-party-vector.jpg");
 }
-.diwali-container::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50vw;
-    background: inherit;
-    background-attachment: fixed;
-  filter: blur(5px);
-
-}
-
-.diwali-inside-container{
-    margin: 0;
+.diwali-container button{
+    background-color: blueviolet;
     color: white;
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    width: 50vw;
-    padding: 2rem;
     font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
 }
-
+.diwali-container{
+    background-color: white;
+    color: blueviolet;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
 .diwali-heading{
-    font-size: 3rem;
-    width: 40%;
-    height: 100%;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
+    font-size: 2.5rem;
+    
     /* border: 2px solid red; */
     font-family: "Protest Strike", sans-serif;
-    color: white;
+    
     text-shadow: 2px 2px 4px black;
 }
 
-.diwali-para{
-    width: 40%;
-    float: right;
-    text-align: center;
-    height: 100%;
-    /* border: 2px solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.offer-btn{
-    margin: 2rem 0.5rem;
-}
 
-@media (max-width: 1200px){
-    .diwali-heading{
-        font-size: 2rem;
-    }
-    .diwali-para{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 900px){
-    .diwali-heading{
-        font-size: 1rem;
-    }
-    .diwali-para{
-        font-size: 0.7rem;
-    }
-}
 
