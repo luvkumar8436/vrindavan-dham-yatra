@@ -44,7 +44,7 @@ const PackagePage = () => {
                     </div>
                     <ul>
                     {
-                        highlights.map(highlight => <li>{highlight}</li> )
+                        highlights.map( (highlight, i ) => <li key={i} >{highlight}</li> )
                     }
                     </ul>
                     <div className="line-break"></div>

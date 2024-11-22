@@ -64,4 +64,13 @@ color: black
   .homepage-text-container span{
     font-size: 1.5rem;
   }
+  .carousel-inner{
+    height: 50vh;
+  }
+}
+
+@media (max-width: 650px){
+  .homepage-text-container span{
+    font-size: 1.2rem;
+  }
 }

@@ -8,14 +8,17 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const images = [
     {
+        index: 1,
         name: premmandir,
         alt : "prem mandir"
     },
     {
+        index: 2,
         name: kirtimandir,
         alt: "kirti mandir"
     },
     {
+        index: 3,
         name: barsana,
         alt: "barsana"
     }
@@ -27,7 +30,7 @@ function DemoCarousel() {
         {
             images.map(
                 image =>  
-                    <Carousel.Item>
+                    <Carousel.Item key={image.index} >
                         <img src={image.name} alt={image.alt} />
                     </Carousel.Item>
                 )  

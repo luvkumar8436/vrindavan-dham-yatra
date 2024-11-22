@@ -41,8 +41,8 @@ export default function Destinations(){
         <div className={styles["container"]}>
             <h2>Top Destinations</h2>
             <div className={styles['destination-container']} >
-                {details.map( (detail) => 
-                    <DestinationCard 
+                {details.map( (detail, i) => 
+                    <DestinationCard
                     destination={detail.destination}
                     url={detail.url}
                     key={detail.destination}

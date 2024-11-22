@@ -92,3 +92,21 @@
   width: 90%;
  } 
 }
+
+@media (max-width: 600px){
+  .radharani-image{
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .radharani-image img{
+    display: block;
+    float: none;
+    margin: auto;
+  }
+  .intro-summary{
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+  }
+}

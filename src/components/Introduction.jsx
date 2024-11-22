@@ -30,6 +30,9 @@ const Introduction = () => {
         </div>
 
         <div className="summary-container">
+          <div className="radharani-image">
+          <img  src={require("./images/Beautiful-wallpaper-radha.jpg")}  alt="radha rani" />
+          </div >
           <div className="intro-summary">
           
             Mathura and Vrindavan are the two sacred towns in the heart of Uttar Pradesh, are timeless destinations that attracts tourist around the world.
@@ -38,9 +41,6 @@ const Introduction = () => {
         
             From the ancient temples and ghats along the Yamuna River to the lively celebrations of Janamasthami and Holi, every street of Mathura has its own story related to Lord Krishna.  
           </div>
-          <div className="radharani-image">
-          <img  src={require("./images/Beautiful-wallpaper-radha.jpg")}  alt="radha rani" />
-          </div >
           
         </div>
         

@@ -11,10 +11,40 @@ const Navbar = () => {
   
   const hidden = isOpen ? "" : "hidden";
 
+  const linksContainerClass = isOpen ? "links-container-mobile" : "links-container";
+  const dropDownContainerClass = isOpen ? "dropdown-container-mobile" : "dropdown-container";
+  
   function handleNavClick(event){
-    console.log(event)
     setOpen(!isOpen);
   }
+
+  function handleSubmenuClick(event){
+    // console.log(event);
+    let style;
+    if(event.target.localName === "div"){
+      style = event.target.parentNode.parentNode.childNodes[1].style;
+    }else if(event.target.localName === "span"){
+      style = event.target.parentNode.childNodes[1].style;
+    }
+
+    // console.log(style.display);
+    if(style.display === ""){
+      style.display = "block";
+    }else{
+      style.display = "";
+    }
+    // console.log(event.target.value); 
+    // console.log(event.target.parentElement.parentElement.childNodes[1]);
+    // const style = event.target.parentElement.parentElement.childNodes[1].style;
+    // if(style.display===""){
+    //   style.display = "block";
+    // }else{
+    //   style.display = "None";
+    // }
+
+    // console.log(event.target.parentElement.parentElement.childNodes[1])
+  }
+
   return (
     <div className={styles["navbar-container"]}>
       <div className={styles["brand-logo"]}>
@@ -33,11 +63,14 @@ const Navbar = () => {
           }
         </div>
       </div>
-      <ul className={`${styles["links-container"]} ${styles[`${hidden}`]}`}>
+      <ul className={`${styles[`${linksContainerClass}`]} ${styles[`${hidden}`]}`}>
+        {
+          isOpen ? <Logo /> : ""
+        }
         <li>Home</li>
         <li>
-          <span>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
-          <div className={styles["dropdown-container"]} >
+          <span onClick={handleSubmenuClick}>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
+          <div className={`${styles[`${dropDownContainerClass}`]}`} >
             <p>One day Mathura Vrindavan Yatra</p>
             <p>Weekend Special Vrindavan Dhan Yatra</p>
             <p>Sampoorna Brij Darshan</p>
@@ -49,9 +82,9 @@ const Navbar = () => {
             <p>2 Days Delhi & Agra Tour</p>
           </div>
         </li>
-        <li>
-          <span>Packages From<div className={[styles["arrow"]]}>&#10095;</div></span>
-          <div className={styles["dropdown-container"]} >
+        <li >
+          <span onClick={handleSubmenuClick} >Packages From<div className={[styles["arrow"]]}>&#10095;</div></span>
+          <div  className={`${styles[`${dropDownContainerClass}`]}`} >
             <p>Hyderabad</p>
             <p>Banglore</p>
             <p>Pune</p>

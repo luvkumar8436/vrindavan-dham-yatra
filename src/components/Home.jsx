@@ -29,7 +29,7 @@ const Home = () => {
        >
         {templeImages.map((slide, i) => {
           return (
-            <Carousel.Item>        
+            <Carousel.Item key={i} >        
           <img
             // style={{opacity: 0.8 }}
             className="d-block w-100 carousel-inner"
