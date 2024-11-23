@@ -1,15 +1,20 @@
-.diwali-main-container{
-    width: 100%;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.festive-img-container{
     align-content: center;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/052/106/592/non_2x/happy-new-year-2025-illustration-with-golden-typography-lettering-and-christmas-ball-on-falling-confetti-background-winter-holiday-design-for-flyer-banner-greeting-card-celebration-poster-party-vector.jpg");
 }
-.diwali-container button{
+.container-outside{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    vertical-align: middle;
+    display: flex;
+}
+.festive-img-container img{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.festive-offer-container p{
+    color: black;
+}
+.festive-offer-container button{
     background-color: blueviolet;
     color: white;
     font-size: 1.5rem;
@@ -17,23 +22,35 @@
     border-radius: 50px;
     margin: 10px;
 }
-.diwali-container{
-    background-color: white;
+.festive-offer-container{
     color: blueviolet;
-    width: 40%;
-    margin: auto;
     text-align: center;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 20px;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
 }
-.diwali-heading{
+.festive-heading{
     font-size: 2.5rem;
-    
-    /* border: 2px solid red; */
     font-family: "Protest Strike", sans-serif;
-    
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 
 
+@media (max-width: 1200px){
+    .festive-heading{
+        font-size: 1.5rem;
+    }
+    .container-outside{
+        flex-direction: column;
+    }
+    .festive-offer-container{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .discount{
+        font-size: 0.7rem;
+    }
+}
