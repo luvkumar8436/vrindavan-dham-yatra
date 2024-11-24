@@ -1,9 +1,10 @@
 import React from "react";
 import { useParams } from 'react-router-dom';
 import DemoCarousel from "./DemoCarousel";
-import './PackagePage.css'
+import styles from './PackagePage.module.css'
 import { useLocation } from "react-router-dom";
 import BasicTabs from "./LabTabs";
+import CallbackForm from "./CallbackForm";
 
 const highlights = [
     "Shree Krishna Janmasthan Temple",
@@ -23,23 +24,26 @@ const PackagePage = () => {
     let {packageName} = useParams();
     const location = useLocation();
     const {duration , places} = location.state;
+    
 
     return (
         <div>
-            <div className="package-page-container">
-                <div className="slider-container">
-                    <DemoCarousel />
+            <div className={styles["package-page-container"]}>
+                <DemoCarousel />
+                
+                <div className={styles["form-container"]}>
+                    <CallbackForm />
                 </div>
-                <div className="plan-info-container">
-                    <h2 className="tour-heading pt-serif-bold" >
+                <div className={styles["plan-info-container"]}>
+                    <h2 className={styles["tour-heading"]} >
                         {packageName}
                     </h2>
-                    <div className="day-box" >
+                    <div className={styles["day-box"]} >
                         <p>{duration}</p>
                         <p>{places} </p>
                     </div>
-                    <div className="line-break"></div>
-                    <div className="heading">
+                    <div className={styles["line-break"]}></div>
+                    <div className={styles["heading"]}>
                         Tour Highlights
                     </div>
                     <ul>
@@ -47,13 +51,13 @@ const PackagePage = () => {
                         highlights.map( (highlight, i ) => <li key={i} >{highlight}</li> )
                     }
                     </ul>
-                    <div className="line-break"></div>
-                    <div className="heading">
+                    <div className={styles["line-break"]}></div>
+                    <div className={styles["heading"]}>
                         Tour Itenary
                     </div>
                     <BasicTabs />
-                    <div className="inclusion-container">
-                        <div className="heading">
+                    <div className={styles["inclusion-container"]}>
+                        <div className={styles["heading"]}>
                             Inclusions
                         </div>
                         <ol>
@@ -63,7 +67,7 @@ const PackagePage = () => {
                             <li>Welcome drink and breakfast</li>
                             <li>Entry admission tickets to attractions (if applicable)</li>
                         </ol>
-                        <div className="heading">
+                        <div className={styles["heading"]}>
                             Exclusions
                         </div>
                         <ul>
@@ -71,8 +75,9 @@ const PackagePage = () => {
                         </ul>
                     </div>
                 </div>
-                  
+                
             </div>
+            
         </div>
         
     )

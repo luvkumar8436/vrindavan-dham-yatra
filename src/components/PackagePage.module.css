@@ -1,0 +1,79 @@
+.plan-info-container{
+    width: 50vw;
+}
+.package-page-container{
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.tour-heading{
+    color: rgb(154, 23, 166);
+    margin: 4vh 0;
+    font-weight: bold;
+}
+.day-box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.day-box p{
+    color: rgb(154, 23, 166);
+    margin: 0;
+}
+
+.line-break{
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 5px 0 10px 0;
+}
+
+.heading{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: rgb(154, 23, 166);
+    margin-bottom: 10px;
+}
+
+.inclusion-container{
+    margin: 1rem 0;
+}
+
+.inclusion-container ol , .inclusion-container ul{
+    list-style-position: inside;
+}
+
+.inclusion-container li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+@media (max-width:1130px){
+    .package-page-container{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+    }
+
+    .plan-info-container{
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 690px){
+    .tour-heading{
+        font-size: 1.5rem;
+    }
+    .heading{
+        font-size: 1.3rem;
+    }
+    .plan-info-container{
+        width: 90vw;
+    }
+}

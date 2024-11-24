@@ -1,0 +1,15 @@
+.location-details{
+    margin: 5px 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.tour-heading{
+    color: blueviolet;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.location-heading{
+    color: blueviolet;
+}

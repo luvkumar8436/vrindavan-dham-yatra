@@ -45,10 +45,14 @@ export default function BasicTabs() {
   return (
     <Box className="box" sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab  label="Item One" {...a11yProps(0)} />
-          <Tab  label="Item Two" {...a11yProps(1)} />
-          <Tab  label="Item Three" {...a11yProps(2)} />
+        <Tabs variant='scrollable' visibleScrollbar={true} textColor='inherit' value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab wrapped={true}  label="Item One" {...a11yProps(0)} />
+          <Tab wrapped={true} label="Item Two" {...a11yProps(1)} />
+          <Tab wrapped={true} label="Item Three" {...a11yProps(2)} />
+          <Tab wrapped={true} label="Item Zero" {...a11yProps(3)} />
+          <Tab wrapped={true} label="Item FOur" {...a11yProps(4)} />
+          <Tab wrapped={true} label="Item Five" {...a11yProps(5)} />
+          <Tab wrapped={true} label="Item Six" {...a11yProps(6)} />
         </Tabs>
       </Box>
       <CustomTabPanel className='tab' value={value} index={0}>

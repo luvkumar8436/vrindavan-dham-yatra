@@ -55,3 +55,11 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 400px){
+    .package-container{
+        grid-row-gap: 20px;
+        grid-column-gap: 5px;
+        padding: 10px;
+    }
+}

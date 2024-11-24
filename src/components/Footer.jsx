@@ -5,7 +5,6 @@ export default function Footer(){
     return(
         <div className={styles['footer-container']}>
             <div className={styles["about-us"]}>
-                <h5>About Us</h5>
                 <Logo />
             <p>Vrindavan Packages: Your premier travel agency specializing in curated journeys and unforgettable adventures. We pride ourselves on crafting personalized experiences that introduce the beauty and culture of destinations in India. Let us be your guide to exploration and discovery.</p>
             </div>

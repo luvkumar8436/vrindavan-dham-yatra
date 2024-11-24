@@ -1,7 +1,6 @@
 const mtConfig = require("@material-tailwind/react").mtConfig;
 
 
-
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {

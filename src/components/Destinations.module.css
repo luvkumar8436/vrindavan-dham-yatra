@@ -1,10 +1,11 @@
 .destination-container{
-    display: flex;
+    display: grid;
     row-gap: 2rem;
     column-gap: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
-    justify-content: start;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 .container{
@@ -13,4 +14,24 @@
 
 .container h2{
     text-align: center;
+}
+
+@media (max-width: 1340px){
+    .destination-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 1000px){
+    .destination-container{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 645px){
+    .destination-container{
+        grid-template-columns: auto;
+        justify-content: space-around;
+    }
 }

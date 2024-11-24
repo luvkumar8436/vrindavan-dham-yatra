@@ -15,7 +15,9 @@
     margin-bottom: 1rem;
 
 }
-
+.about-us{
+    padding: 30px;
+}
 .about-us p{
     margin: 20px 0;
 }
@@ -37,5 +39,16 @@
     }
     .contact-us{
         grid-row: 3 / span 1;
+    }
+}
+
+@media (max-width: 655px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .about-us{
+        padding: 20px;
     }
 }

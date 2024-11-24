@@ -2,7 +2,7 @@
     /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(122,85,162,1) 30%, rgba(0,212,255,1) 100%); */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(100,85,162,1) 19%, rgba(99,72,188,1) 42%, rgba(44,96,225,1) 74%, rgba(15,124,245,1) 91%, rgba(21,0,255,1) 100%);
     position: relative;
-    padding: 4vh 4vw;
+    padding: 1rem 0;
 }
 
 .react-player{
@@ -13,7 +13,8 @@
     display: flex;
     justify-content: space-between;
     width: 70vw;
-    margin: 5vh auto;
+    margin: auto;
+    padding: 2rem;
 }
 .text-container p{
     color: white;
@@ -22,4 +23,16 @@
 .text-container span{
     font-size: 2rem;
     display: block;
+}
+
+@media (max-width: 750px){
+    .text-container{
+        width: 90vw;
+    }
+    .text-container p{
+        font-size: 0.7rem;
+    }
+    .text-container p span{
+        font-size: 1rem;
+    }
 }
