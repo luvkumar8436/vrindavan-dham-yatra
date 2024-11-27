@@ -97,14 +97,14 @@ export const tourItnerayData = [
         itenary: [
             {
                 "Day 1": [{
-                    "Day 1 tour starts from Mathura Vrindavan" : [
+                    "Day 1 tour starts from Mathura/Delhi towards Gokul" : [
                         {
-                            "Location 1: Krishna Janambhoomi" : 
-                            "Krishna Janambhoomi Mandir, one of India’s most revered temples, is thought to be the location of Lord Krishna’s birth. The temple is significant not just from a religious standpoint but also historically since King Kans, Lord Krishna’s maternal uncle, was imprisoned there in a cell. King Kans’ brutality toward the parents of Lord Krishna is symbolised by the stone-walled cell. When visiting the temple, which is a popular pilgrimage destination in India, pilgrims are advised to dress modestly"
+                            "Location 1: Nand Bhawan" : 
+                            "Nand Bhawan is the residence of Shri Krishna's father Nand Baba which is located in Nand gaon near Barsana. From this temple you can see the whole view of Nandgaon."
                         },
                         {
-                            "Location 2: Dwarkadhish Temple" : 
-                            "One of the oldest and most well-known Hindu sanctuaries in Mathura is Shri Dwarkadhish Temple, which is situated near the northern boundary. The shrine is devoted to Lord Dwarkanath, a manifestation of Lord Krishna who reigned over Dwarka (hence the name Dwarkadheesh). The black marble idol has been expertly sculpted. Seth Gokuldas Parikh, the wealthy Gwalior province treasurer, built the shrine in 1815. The temple, one of the most revered locations in the city, is also a work of art in architecture, with huge pillars and vibrant floral patterns. While visiting the shrine, devotees are advised to dress modestly."
+                            "Location 2: Chinta Haran Madhadev" : 
+                            "This template is situated near Brahmand ghat which is on the bank of river Yamuna. When Krishna opened his mouth and shown Universe in it then Yashoda maiya become concerned about Krishna safety that's when Lord Shiva came and take away his all anxiety."
                         }
                     ]
                 }

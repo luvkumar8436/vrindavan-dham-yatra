@@ -57,7 +57,7 @@ const PackagePage = () => {
                         Tour Itenary
                     </div>
                     {tourItnerayData.map( data => 
-                        <BasicTabs />
+                        <BasicTabs data={data.itenary} />
                     )}
                     
                     <div className={styles["inclusion-container"]}>
