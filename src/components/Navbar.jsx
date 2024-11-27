@@ -1,9 +1,10 @@
 
-// import { Link } from 'react-router-dom';
+import { Link, NavLink  } from 'react-router-dom';
 // import logo from './images/Vrindavan_Dham_Yatra_Logo_Cleaned-removebg-preview.png';
 import styles from "./Navbar.module.css";
 import Logo from "./Logo";
 import { useState } from "react";
+import { data } from './toursData';
 
 const Navbar = () => {
   
@@ -48,7 +49,7 @@ const Navbar = () => {
   return (
     <div className={styles["navbar-container"]}>
       <div className={styles["brand-logo"]}>
-        <Logo className={styles["logo"]} />
+        <NavLink  to={"/"}><Logo className={styles["logo"]} /></NavLink> 
       </div>
       <div  className={styles["nav-icon"]}>
         <div onClick={handleNavClick} className={styles["outer-div"]}>
@@ -71,15 +72,7 @@ const Navbar = () => {
         <li>
           <span onClick={handleSubmenuClick}>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div className={`${styles[`${dropDownContainerClass}`]}`} >
-            <p>One day Mathura Vrindavan Yatra</p>
-            <p>Weekend Special Vrindavan Dhan Yatra</p>
-            <p>Sampoorna Brij Darshan</p>
-            <p>Brijdham darshan and Parikrama</p>
-            <p>Taj and Agra Fort Tour</p>
-            <p>Agra and Mathura Tour</p>
-            <p>1 week Delhi Agra & Complete Brij Tour</p>
-            <p>7 Days Delhi Haridwar Rishikesh Agra Mathura Vrindavan</p>
-            <p>2 Days Delhi & Agra Tour</p>
+          {  data.map(  obj  => <Link style={{textDecoration: "None", color: "blueviolet"}} to={"/tourist-packages/"+obj.tourHeadline } state={{ duration: obj.duration , places: obj.tourPlaces }} ><p >{obj.tourHeadline}</p></Link> ) }
           </div>
         </li>
         <li >

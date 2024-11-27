@@ -16,6 +16,7 @@
 .day-box{
     display: flex;
     justify-content: space-between;
+    column-gap: 20px;
     font-size: 1.3rem;
     font-weight: bolder;
 }
@@ -75,5 +76,8 @@
     }
     .plan-info-container{
         width: 90vw;
+    }
+    .day-box{
+        font-size: 0.7rem;
     }
 }

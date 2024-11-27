@@ -5,6 +5,7 @@ import styles from './PackagePage.module.css'
 import { useLocation } from "react-router-dom";
 import BasicTabs from "./LabTabs";
 import CallbackForm from "./CallbackForm";
+import { tourItnerayData } from "./toursData";
 
 const highlights = [
     "Shree Krishna Janmasthan Temple",
@@ -55,7 +56,10 @@ const PackagePage = () => {
                     <div className={styles["heading"]}>
                         Tour Itenary
                     </div>
-                    <BasicTabs />
+                    {tourItnerayData.map( data => 
+                        <BasicTabs />
+                    )}
+                    
                     <div className={styles["inclusion-container"]}>
                         <div className={styles["heading"]}>
                             Inclusions
