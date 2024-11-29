@@ -100,11 +100,49 @@ export const tourItnerayData = [
                     "Day 1 tour starts from Mathura/Delhi towards Gokul" : [
                         {
                             "Location 1: Nand Bhawan" : 
-                            "Nand Bhawan is the residence of Shri Krishna's father Nand Baba which is located in Nand gaon near Barsana. From this temple you can see the whole view of Nandgaon."
+                            "Nand Bhawan, also known as Chaurasi Khamba Temple, is the place where Krishna spent his childhood days after their real parents were imprisioned by Kansa. This house belongs to Nand Maharaj, the father of Lord Krishna."
                         },
                         {
                             "Location 2: Chinta Haran Madhadev" : 
-                            "This template is situated near Brahmand ghat which is on the bank of river Yamuna. When Krishna opened his mouth and shown Universe in it then Yashoda maiya become concerned about Krishna safety that's when Lord Shiva came and take away his all anxiety."
+                            "This template is situated near Brahmand ghat which is on the bank of river Yamuna. When Krishna opened his mouth and shown Universe in it then Yashoda maiya become concerned about Krishna safety that's when Lord Shiva came and take away his all fear about Krishna safety so this place is call Chinta Haran Mahadev."
+                        },
+                        {
+                            "Location 3: Raman Reti Temple" : 
+                            "The sacred sands of Raman Reti are said to be the place where Lord Krishna used to play with his brother Balram and his friends. It has peaceful envrionment and temple inside and the sand where tourist sit and enjoy spiritual bhajans."
+                        },
+                    ],
+                    "Take Lunch break and depart for Mathura": [
+                        {
+                        "Location 4: Shri Krishna Janmbhoomi Temple": 
+                        "This place has held religious significance since at least the 6th century BCE with findings of religious artifacts in excavations. There are three main temples inside the premises -- Keshavdev temple which is dedicated to Krishna, Garbh Griha where Krishna is believed to be born in Dvapar Yuga and Bhagvata Bhavan where presiding deities are Radha Krishna."
+                        },
+                        {
+                            "Location 5: Dwarikadhish Temple":
+                            "n this historic temple, Krishna is worshipped in his Dwarkanath or Dwarkadhish form along with his feminine counterpart goddess Radha in the form of Radharani."
+                        }
+                    ],
+                    "Depart for Vrindavan": [
+                        {
+                            "Location 6: ISKCON Temple Vrindavan":
+                            "ISKCON Vrindavan, also called Sri Krishna Balaram Mandir, is one of the major ISKCON temples in the world."
+                        },
+                        {
+                            "Location 7: Banke Bihari Temple":
+                            "This temple is dedicated to Banke Bihari who is the combined form of Radha and Krishna and most popular temple in Vrindavan and world."
+                        },
+                        {
+                            "Location 8: Radhan Raman Temple":
+                            "It is dedicated to Krishna who is worshiped as Radha Ramana. This temple is counted as one of the Seven most revered ancient temples of Vrindavan."
+                        },
+                        {
+                            "Location 9: Mata Vaishno Devi Temple":
+                            "This temple is dedicated to Vaishno devi mata and built in 12 acres which is good place for tourist to visit and get spiritual knowledge."
+                        }
+                    ],
+                    "Prem Mandir (Light show in evenining)": [
+                        {
+                            "Location 10: Prem Mandir":
+                            "Visit the most attractive temple of Vrindavan, and enjoy the spiritual vibe of this place. Also watch the light and musical foundation show which will be a precious memory of this journey."
                         }
                     ]
                 }
