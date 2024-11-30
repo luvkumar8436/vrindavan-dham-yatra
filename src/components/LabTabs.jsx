@@ -47,24 +47,18 @@ export default function BasicTabs({data}) {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs variant='scrollable' visibleScrollbar={true} textColor='inherit' value={value} onChange={handleChange} aria-label="basic tabs example">
             {
-              data.map((dataObj) => 
-                Object.keys(dataObj).map((label , i) => 
+                Object.keys(data).map((label , i) => 
                   <Tab wrapped={true}  label={label} {...a11yProps(i)} />
                 )
-              )
             }
         </Tabs>
       </Box>
-
       {
-
-        data.map((dataObj) => 
-          Object.keys(dataObj).map((label , i) => 
-            <CustomTabPanel className='tab' value={value} index={0}>
-              <ItenaryDetails  data={dataObj[label][0]}/>
-            </CustomTabPanel>
+          Object.keys(data).map((label , i) => 
+              <CustomTabPanel className='tab' value={value} index={i}>
+                <ItenaryDetails  data={data[label]}/>
+              </CustomTabPanel>
           )
-        )
 
 
         // data.map((itenary ) =>  

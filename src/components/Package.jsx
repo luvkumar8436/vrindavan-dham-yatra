@@ -16,7 +16,7 @@ const Package = (props) => {
                 <div className="tour-subinfo-container">
                     <div className="tour-places" >{props.tourPlaces}</div>
                     <div ><Link  ><ContainedButtons class="enquiry"  text="Enquire Now" /></Link></div>
-                    <div ><Link to={"/tourist-packages/"+props.tourHeadline } state={{ duration: props.duration , places: props.tourPlaces }} > <ContainedButtons class="info" text="Know More" /></Link></div>
+                    <div ><Link to={"/tourist-packages/"+props.tourHeadline } state={{ duration: props.duration , places: props.tourPlaces , tourData: props.tourData}} > <ContainedButtons class="info" text="Know More" /></Link></div>
                 </div>  
             </div>
         </div>

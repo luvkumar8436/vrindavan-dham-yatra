@@ -22,6 +22,7 @@ const PackagesList = () => {
                     rating={item.rating}
                     image={item.image}
                     duration={item.duration}
+                    tourData={item.tourData}
                     key={key}
                     />
                 

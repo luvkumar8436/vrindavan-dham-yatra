@@ -5,28 +5,12 @@ import styles from './PackagePage.module.css'
 import { useLocation } from "react-router-dom";
 import BasicTabs from "./LabTabs";
 import CallbackForm from "./CallbackForm";
-import { tourItnerayData } from "./toursData";
 
-const highlights = [
-    "Shree Krishna Janmasthan Temple",
-    "Dwarkadhish Temple",
-    "Banke Bihari Mandir",
-    "Prem Mandir",
-    "ISKCON Temple",
-    "Barsana Temple",
-    "Goverdhan",
-    "Nandgaun",
-    "Agra Tajmahal",
-    "Rishikesh",
-    "Haridwar",
-    "Lakshman Jhula"];
 
 const PackagePage = () => {
     let {packageName} = useParams();
     const location = useLocation();
-    const {duration , places} = location.state;
-    
-
+    const {duration , places, tourData} = location.state;
     return (
         <div>
             <div className={styles["package-page-container"]}>
@@ -47,18 +31,16 @@ const PackagePage = () => {
                     <div className={styles["heading"]}>
                         Tour Highlights
                     </div>
-                    <ul>
-                    {
-                        highlights.map( (highlight, i ) => <li key={i} >{highlight}</li> )
-                    }
-                    </ul>
-                    <div className={styles["line-break"]}></div>
-                    <div className={styles["heading"]}>
-                        Tour Itenary
-                    </div>
-                    {tourItnerayData.map( data => 
-                        <BasicTabs data={data.itenary} />
-                    )}
+                            <>
+                                <ul>
+                                    {tourData.highlights.map( (highlight, i ) => <li key={i} >{highlight}</li> )}
+                                </ul>
+                                <div className={styles["line-break"]}></div>
+                                <div className={styles["heading"]}>
+                                    Tour Itenary
+                                </div>
+                                <BasicTabs data={tourData.itenary} />
+                            </>
                     
                     <div className={styles["inclusion-container"]}>
                         <div className={styles["heading"]}>
