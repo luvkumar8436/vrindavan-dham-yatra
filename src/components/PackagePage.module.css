@@ -1,6 +1,15 @@
 .plan-info-container{
     width: 50vw;
 }
+.plan-info-container ul{
+    list-style-position: inside;
+}
+.plan-info-container ul li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
 .package-page-container{
     padding: 20px;
     display: inline-block;

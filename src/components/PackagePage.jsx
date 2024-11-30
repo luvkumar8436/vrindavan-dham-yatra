@@ -31,17 +31,15 @@ const PackagePage = () => {
                     <div className={styles["heading"]}>
                         Tour Highlights
                     </div>
-                            <>
-                                <ul>
-                                    {tourData.highlights.map( (highlight, i ) => <li key={i} >{highlight}</li> )}
-                                </ul>
-                                <div className={styles["line-break"]}></div>
-                                <div className={styles["heading"]}>
-                                    Tour Itenary
-                                </div>
-                                <BasicTabs data={tourData.itenary} />
-                            </>
-                    
+                    <ul>
+                        {tourData.highlights.map( (highlight, i ) => <li key={i} >{highlight}</li> )}
+                    </ul>
+                    <div className={styles["line-break"]}></div>
+                    <div className={styles["heading"]}>
+                        Tour Itenary
+                    </div>
+                    <BasicTabs data={tourData.itenary} />
+        
                     <div className={styles["inclusion-container"]}>
                         <div className={styles["heading"]}>
                             Inclusions
