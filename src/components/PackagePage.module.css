@@ -1,14 +1,13 @@
 .plan-info-container{
     width: 50vw;
 }
-.plan-info-container ul{
+.heading-ul{
+    list-style-type: disc;
     list-style-position: inside;
+    padding: 1px;
+    margin: 0;
 }
-.plan-info-container ul li{
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-}
+
 
 .package-page-container{
     padding: 20px;
@@ -39,13 +38,14 @@
     height: 2px;
     background-color: rgba(0, 0, 0, 0.4);
     margin: 5px 0 10px 0;
+    opacity: 0.5;
 }
 
 .heading{
     font-size: 1.6rem;
     font-weight: bolder;
     color: rgb(154, 23, 166);
-    margin-bottom: 10px;
+    margin: 10px 0 20px 0;
 }
 
 .inclusion-container{

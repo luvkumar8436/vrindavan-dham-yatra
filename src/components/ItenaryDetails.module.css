@@ -13,3 +13,11 @@ p{
 .location-heading{
     color: blueviolet;
 }
+.location-details{
+    list-style-position: inside;
+    margin: 2px;
+    padding: 0;
+}
+.location-details li{
+    list-style-type: disc !important;
+}

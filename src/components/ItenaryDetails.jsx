@@ -15,7 +15,11 @@ export default function ItenaryDetails({data}){
                                 data[headline].map((locationsData) =>  (
                                         <>
                                             <li className={style['location-heading']} >{Object.keys(locationsData)[0]}</li>
-                                            <p className={style['location-details']} >{locationsData[Object.keys(locationsData)[0]]}</p>
+                                            <ul className={style['location-details']}>{
+                                            typeof locationsData[Object.keys(locationsData)[0]] === 'string' ?
+                                                locationsData[Object.keys(locationsData)[0]] : 
+                                                locationsData[Object.keys(locationsData)[0]].map(item => <li>{item}</li>)
+                                            }</ul>
                                         </>
 
                                 ))

@@ -21,7 +21,7 @@ const PackagePage = () => {
                 </div>
                 <div className={styles["plan-info-container"]}>
                     <h2 className={styles["tour-heading"]} >
-                        {packageName}
+                        {packageName.split("-").join(" ")}
                     </h2>
                     <div className={styles["day-box"]} >
                         <p>{duration}</p>
@@ -31,7 +31,7 @@ const PackagePage = () => {
                     <div className={styles["heading"]}>
                         Tour Highlights
                     </div>
-                    <ul>
+                    <ul className={styles["heading-ul"]}>
                         {tourData.highlights.map( (highlight, i ) => <li key={i} >{highlight}</li> )}
                     </ul>
                     <div className={styles["line-break"]}></div>
@@ -39,6 +39,13 @@ const PackagePage = () => {
                         Tour Itenary
                     </div>
                     <BasicTabs data={tourData.itenary} />
+                    <div className={styles["heading"]}>
+                        Memorable Moments
+                    </div>
+                    <ul className={styles["heading-ul"]}>
+                        {tourData.moments.map( (mem, i ) => <li key={i} >{mem}</li> )}
+                    </ul>
+                    <div className={styles["line-break"]}></div>
         
                     <div className={styles["inclusion-container"]}>
                         <div className={styles["heading"]}>
