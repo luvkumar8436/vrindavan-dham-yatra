@@ -39,13 +39,19 @@ const PackagePage = () => {
                         Tour Itenary
                     </div>
                     <BasicTabs data={tourData.itenary} />
-                    <div className={styles["heading"]}>
-                        Memorable Moments
-                    </div>
-                    <ul className={styles["heading-ul"]}>
-                        {tourData.moments.map( (mem, i ) => <li key={i} >{mem}</li> )}
-                    </ul>
-                    <div className={styles["line-break"]}></div>
+                    {
+                            tourData.moments !== undefined ?
+                            <>
+                                <div className={`${styles["heading"]} ${styles["mom"]}`}>
+                                Memorable Moments
+                                </div>
+                                <ul className={styles["heading-ul"]}>
+                                {tourData.moments.map( (mem, i ) => <li key={i} >{mem}</li> )}
+                                </ul>
+                                <div className={styles["line-break"]}></div>
+                            </> :
+                            <></>
+                    }
         
                     <div className={styles["inclusion-container"]}>
                         <div className={styles["heading"]}>
