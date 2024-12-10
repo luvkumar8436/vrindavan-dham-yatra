@@ -2122,13 +2122,13 @@ export const tourItnerayData = [
     {
         tourHeadline: "One Day Ayodhya Trip",
         highlights: [
-            "Amber Palace",
-            "Jal Mahal",
-            "Jantar Mantar",
-            "City Palace",
-            "Hawa Mahal",
-            "Jaigarh Fort",
-            "Nahargarh Fort",
+            "Ram Janmabhoomi Temple",
+            "Hanuman Garhi Temple",
+            "Kanak Bhawan Temple",
+            "Saryu Ghat",
+            "Treta Ke Thakur Temple",
+            "Guptar Ghat",
+            "Ram Ki Paidi",
         ],
         itenary:
             {
@@ -2214,6 +2214,120 @@ export const tourItnerayData = [
                         }
                     ],
                     "Trip is completed and will drop you at your preferred location": []
+                },
+            }
+    },
+    {
+        tourHeadline: "Two Days Ayodhya Trip",
+        highlights: [
+            "Ram Janmabhoomi Temple",
+            "Hanuman Garhi",
+            "Kanak Bhawan",
+            "Treta Ke Thakur",
+            "Guptar Ghat",
+            "Nirvana Café",
+            "Sarayu River",
+            "Ram Ki Paidi",
+            "Dashrath Mahal",
+            "Mani Parvat",
+            "Tulsi Smarak Bhawan",
+            "Ramkatha Park",
+        ],
+        itenary:
+            {
+                "Day 1": {
+                    "Spiritual and Historical Exploration" : [
+                        
+                        {
+                            "8:30 AM: Breakfast":
+                            "Start your day with local breakfast at Shree Ram Bhojanalaya. Try puri-sabzi with kachoris and a glass of lassi."
+                        },
+                        {
+                            "9:30 AM: Visit Ram Janmabhoomi Temple":
+                            "Explore the birthplace of Lord Rama. Expect security checks and long queues, so allocate 2 hours."
+                        },
+                        {
+                            "11:30 AM: Hanuman Garhi":
+                            "This iconic temple dedicated to Lord Hanuman offers stunning views of Ayodhya."
+                        }
+                    ],
+                    "Afternoon": [
+                        {
+                            "1:00 PM: Lunch at Brij Bhavan Bhojanalaya":
+                            [
+                                "Enjoy authentic vegetarian dishes like aloo gobhi, dal, chapati, and rice."                                
+                            ]
+                        },
+                        {
+                            "2:30 PM: Kanak Bhawan":
+                            "Known for its intricate architecture and idols of Lord Rama and Sita decked in gold."
+                        },
+                        {
+                            "3:30 PM: Treta Ke Thakur":
+                            "This ancient temple houses beautiful idols of Lord Rama, Sita, Lakshman, and Hanuman."
+                        }
+                    ], 
+                    "Evening":[
+                        {
+                            "5:30 PM: Sarayu Aarti at Guptar Ghat":
+                            "Witness a mesmerizing evening aarti on the serene banks of the Sarayu River."
+                        },
+                        {
+                            "7:30 PM: Dinner at Nirvana Café":
+                            "A relaxed spot for local and fusion cuisine. Try the thali for a taste of multiple dishes."
+                        }
+                    ], 
+                },
+                "Day 2": {
+                    "Cultural and Scenic Immersion" : [    
+                        {
+                            "6:00 AM: Morning Walk by the Sarayu River":
+                            "Enjoy the tranquility and sunrise over the river."
+                        },
+                        {
+                            "7:30 AM: Breakfast at Ram Ki Paidi Food Stalls":
+                            "Enjoy chai, samosas, and jalebis by the river."
+                        },
+                        {
+                            "8:30 AM: Visit Dashrath Mahal":
+                            "Explore the royal palace associated with King Dashrath, Lord Rama’s father."
+                        },
+                        {
+                            "10:00 AM: Mani Parvat":
+                            "This ancient mound offers panoramic views of the city and is steeped in legend."
+                        }
+                    ],
+                    "Afternoon": [
+                        
+                        {
+                            "12:30 PM: Lunch at Ayodhya Residency Restaurant":
+                            [
+                                "Savor local dishes like bedmi puri and baingan bharta in a serene environment.",                             
+                            ]
+                        },
+                        {
+                            "2:00 PM: Tulsi Smarak Bhawan":
+                            "Learn about Tulsidas, the author of Ramcharitmanas, and enjoy cultural performances if available."
+                        },
+                        {
+                            "3:30 PM: Ramkatha Park":
+                            "A beautiful garden and open-air theater with sculptures depicting scenes from Lord Rama’s life."
+                        }
+                    ], 
+                    "Evening":[
+                        {
+                            "5:30 PM: Explore Local Markets":
+                            "Shop for religious artifacts, souvenirs, and handmade textiles."
+                        },
+                        {
+                            "7:00 PM: Dinner at Vaishnav Bhojanalaya":
+                            "Known for traditional recipes like dal, roti, and kadhi, paired with desserts like rabri or malpua."
+                        },
+                        {
+                            "8:30 PM: Relax and Return":
+                            "Reflect on the serene experience before departure."
+                        }
+                    ], 
                 },
             }
     },
@@ -2371,6 +2485,14 @@ export const data = [
         image:taj,
         duration:"1 Day",
         tourData: tourItnerayData[17] 
+    },
+    {
+        tourHeadline:"Two Days Ayodhya Trip",
+        tourPlaces:"Ayodhya",
+        rating: `5 (119)`,
+        image:taj,
+        duration:"2 Days & 1 Night",
+        tourData: tourItnerayData[18] 
     },
     {
         tourHeadline:"1 week Delhi Agra & Complete Brij Tour",
