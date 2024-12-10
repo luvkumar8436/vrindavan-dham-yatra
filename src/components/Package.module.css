@@ -47,6 +47,24 @@
     margin: 10px 7px;
 }
 
+.enquiry{
+    float: right;
+    font-size: 0.8rem;
+    background-color: rgb(149, 7, 249);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.info{
+    float: left;
+    background-color: blueviolet;
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 @media(max-width: 630px){
     .package{
         height: 25rem;
