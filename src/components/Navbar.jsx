@@ -4,7 +4,7 @@ import { Link, NavLink  } from 'react-router-dom';
 import styles from "./Navbar.module.css";
 import Logo from "./Logo";
 import { useState } from "react";
-import { data } from './toursData';
+import { data } from './toursData';               
 
 const Navbar = () => {
   
@@ -72,7 +72,7 @@ const Navbar = () => {
         <li>
           <span onClick={handleSubmenuClick}>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div className={`${styles[`${dropDownContainerClass}`]}`} >
-          {  data.map(  obj  => <Link style={{textDecoration: "None", color: "blueviolet"}} to={"/tourist-packages/"+obj.tourHeadline } state={{ duration: obj.duration , places: obj.tourPlaces }} ><p >{obj.tourHeadline}</p></Link> ) }
+          {  data.map(  obj  => <Link to={"/tourist-packages/"+obj.tourHeadline.split(" ").join("-") } state={{ duration: obj.duration , places: obj.tourPlaces, tourData: obj.tourData }} ><p >{obj.tourHeadline}</p></Link> ) }
           </div>
         </li>
         <li >

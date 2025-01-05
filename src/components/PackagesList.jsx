@@ -21,6 +21,7 @@ const PackagesList = () => {
                     tourPlaces={item.tourPlaces}
                     rating={item.rating}
                     image={item.image}
+                    packageLink={"/tourist-packages/"}
                     duration={item.duration}
                     tourData={item.tourData}
                     key={key}

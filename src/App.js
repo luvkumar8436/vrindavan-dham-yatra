@@ -9,7 +9,7 @@ import ContactUs from './components/ContactUs';
 import PackagePage from './components/PackagePage'
 import Footer from './components/Footer';
 import Query from './components/Queries';
-
+import PackageFromPage from './components/PackageFromPage';
 
 function App() {
   return (
@@ -22,6 +22,8 @@ function App() {
           {/* <Route path="/famous-temples/:templeName" element={<FamousTemples />} /> */}
           <Route path="/tourist-packages/:packageName" element={<PackagePage />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/tour-packages-from-hyderabad" element={<PackageFromPage />} />
+          <Route path="/tour-packages-from-hyderabad/:packageName" element={<PackagePage />} />
         </Routes>
         <Query />
         <Footer />

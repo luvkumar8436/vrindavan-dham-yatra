@@ -1,0 +1,64 @@
+.container{
+    position: relative;
+}
+
+.img-container{
+    background-image: 
+    
+    url('./images/Tourist_Places_To_Visit_in_Vrindavan_-_UttarPradeshTrip.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    width: 100%;
+}
+
+.container h1{
+    position: absolute;
+    margin: 20px 40px;
+    color: white;
+    font-family:  "Noto Sans", serif;
+    text-align: center;
+}
+
+.package-outer-container{
+    margin: 20px 30px;
+}
+.package-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-gap: 40px;
+}
+.package-outer-container h2{
+    font-family: "Noto Sans" , serif;
+    color: blueviolet;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0;
+}
+
+@media (max-width: 1370px){
+    .package-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px){
+    .package-container{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media(max-width: 630px){
+    .package-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px){
+    .package-container{
+        grid-row-gap: 20px;
+        grid-column-gap: 5px;
+        padding: 10px;
+    }
+}

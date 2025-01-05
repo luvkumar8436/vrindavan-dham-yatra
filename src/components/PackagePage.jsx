@@ -5,12 +5,28 @@ import styles from './PackagePage.module.css'
 import { useLocation } from "react-router-dom";
 import BasicTabs from "./LabTabs";
 import CallbackForm from "./CallbackForm";
-
+// import { tourItnerayData } from "./toursData";
+import { data } from "./toursData";
+import { fromData } from './toursFromData'
 
 const PackagePage = () => {
     let {packageName} = useParams();
     const location = useLocation();
-    const {duration , places, tourData} = location.state;
+    const locationURL = location.pathname.split("/")[1].split("-");
+    console.log(location)
+    console.log(locationURL)
+    let duration , places, tourData;
+    if (location.state === null) { 
+        // console.log(data.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" ")))
+        if (locationURL[0] === "tour" && locationURL[1] === "packages" && locationURL[2] === "from"){
+            ({duration, tourPlaces:places , tourData} = fromData.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" "))[0] );
+        }else{
+            ({duration, tourPlaces:places , tourData} = data.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" "))[0] );
+        }
+        // console.log(duration, places , tourData);
+    }else{
+        ({duration , places, tourData} = location.state);
+    }
     return (
         <div>
             <div className={styles["package-page-container"]}>

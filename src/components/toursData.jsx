@@ -1,7 +1,6 @@
 // import { duration } from "@mui/material";
 import prem_mandir_img from './images/prem-mandir-night.jpg'
 import kirti_mandir_img from './images/kirti-mandir.jpeg'
-import gokul from './images/Sages-Kutiyas-at-Raman-Reti-Places-To-Visit-in-Gokul-Govardhan.jpg'
 import parikrama from './images/parikrama.jpg'
 import taj from './images/taj.jpg'
 import agrafort from './images/pexels-kabita-darlami-16871795-819x1024.jpg'
@@ -2331,6 +2330,207 @@ export const tourItnerayData = [
                 },
             }
     },
+    {
+        tourHeadline: "Two Days Dehradun Trip",
+        highlights: [
+            "Robber's Cave",
+            "Sahastradhara",
+            "Kalsang Friends Corner",
+            "Forest Research Institute (FRI)",
+            "Tapkeshwar Temple",
+            "Mindrolling Monastery",
+            "Malsi Deer Park",
+            "Buddha Temple",
+            "Paltan Bazaar",
+        ],
+        itenary:
+            {
+                "Day 1": {
+                    "Exploring Nature and Heritage" : [
+                        
+                        {
+                            "8:00 AM – 9:00 AM: Breakfast at Chetan Puri Wala":
+                            "Start your day with authentic puri-sabzi at this iconic eatery in Paltan Bazaar."
+                        },
+                        {
+                            "9:30 AM – 11:30 AM: Robber's Cave (Guchhupani)":
+                            "A unique natural cave surrounded by a stream. Enjoy wading through the water and soaking in the tranquility."
+                        },
+                        {
+                            "12:00 PM – 1:30 PM: Sahastradhara":
+                            "Visit these beautiful sulfur springs and waterfalls. Don’t forget to take a short ropeway ride for panoramic views."
+                        }
+                    ],
+                    "Afternoon": [
+                        {
+                            "1:45 PM – 3:00 PM: Lunch at Kalsang Friends Corner":
+                            [
+                                "Relish Tibetan and Chinese dishes like momos, thukpa, and more at this beloved local restaurant on Rajpur Road."                                
+                            ]
+                        },
+                        {
+                            "3:30 PM – 5:00 PM: Forest Research Institute (FRI)":
+                            "Explore this colonial architectural marvel, its museums, and the surrounding lush greenery."
+                        },
+                    ], 
+                    "Evening":[
+                        {
+                            "5:30 PM – 6:30 PM: Tapkeshwar Temple":
+                            "A serene cave temple dedicated to Lord Shiva, located along the banks of a seasonal river."
+                        },
+                        {
+                            "7:00 PM – 8:30 PM: Dinner at Black Pepper":
+                            "Enjoy North Indian and Mughlai cuisine at this popular dining spot in Dehradun."
+                        },
+                    ], 
+                    "9:00 PM: Relax at your hotel/guesthouse": [
+                    ]
+                },
+                "Day 2": {
+                    "Spiritual and Scenic Tour" : [    
+                        {
+                            "8:00 AM – 9:00 AM: Breakfast at Kumar Sweets and Restaurant":
+                            "Try their delicious chole bhature and sweets to kick-start your day."
+                        },
+                        {
+                            "9:30 AM – 11:30 AM: Mindrolling Monastery":
+                            "A peaceful Tibetan monastery with a stunning stupa, gardens, and meditation halls. Spend time soaking in the spiritual vibes."
+                        },
+                    ],
+                    "Afternoon": [
+                        
+                        {
+                            "12:00 PM – 1:30 PM: Malsi Deer Park (now Dehradun Zoo)":
+                            "A small but well-maintained zoo where you can see deer, peacocks, and other animals."
+                        },
+                        {
+                            "1:45 PM – 3:00 PM: Lunch at Orchard":
+                            "Set in a picturesque location, this restaurant serves delectable Thai and Tibetan food with scenic views."
+                        },
+                        {
+                            "3:30 PM – 5:00 PM: Buddha Temple":
+                            [
+                                "Admire the intricate murals and serene atmosphere at this lesser-known gem near Clement Town.",                             
+                            ]
+                        },
+                    ], 
+                    "Evening":[
+                        {
+                            "5:30 PM – 6:30 PM: Shopping at Paltan Bazaar":
+                            "Shop for local handicrafts, woolens, and spices. Don’t forget to try local snacks like singori and bal mithai."
+                        },
+                        {
+                            "7:00 PM – 8:30 PM: Dinner at Anando Resto-Bar":
+                            "End your trip with a mix of local and continental flavors in a cozy ambiance."
+                        },
+                    ], 
+                    "9:00 PM: Head back to your hotel or board your departure transportation.": [
+
+                    ]
+                },
+            }
+    },
+    {
+        tourHeadline: "Two Days Haridwar and Rishikesh trip",
+        highlights: [
+            "Har Ki Pauri and Ganga Aarti",
+            "Chandi Devi Temple",
+            "Mansa Devi Temple",
+            "Ganga Aarti",
+            "Laxman Jhula",
+            "Ram Jhula",
+            "Maharishi Mahesh Yogi Ashram",
+            "Adventure Activities",
+            "Parmarth Niketan",
+        ],
+        itenary:
+            {
+                "Day 1": {
+                    "Haridwar - Spiritual and Scenic Exploration" : [
+                        
+                        {
+                            "8:00 AM – 9:00 AM: Breakfast at Mohan Ji Puri Wale":
+                            "Begin with authentic puri-sabzi, kachoris, and lassi at this iconic Haridwar eatery near Har Ki Pauri."
+                        },
+                        {
+                            "9:30 AM – 11:00 AM: Har Ki Pauri and Ganga Aarti":
+                            "Visit Har Ki Pauri for a serene morning Ganga darshan. Stroll along the ghats and take a holy dip if you wish."
+                        },
+                        {
+                            "11:30 AM – 1:00 PM: Chandi Devi Temple":
+                            "Reach the temple via a scenic ropeway ride and enjoy panoramic views of Haridwar."
+                        }
+                    ],
+                    "Afternoon": [
+                        {
+                            "1:30 PM – 2:30 PM: Lunch at Chotiwala Restaurant":
+                            [
+                                "A must-visit spot for simple and delicious North Indian vegetarian meals."                                
+                            ]
+                        },
+                        {
+                            "3:00 PM – 4:30 PM: Mansa Devi Temple":
+                            "Another iconic temple accessible via ropeway, offering stunning views and a peaceful atmosphere."
+                        },
+                    ], 
+                    "Evening":[
+                        {
+                            "5:00 PM – 6:00 PM: Evening Ganga Aarti at Har Ki Pauri":
+                            "Witness the grand evening Ganga Aarti with chants, lights, and floating diyas creating a magical experience."
+                        },
+                        {
+                            "7:00 PM – 8:30 PM: Dinner at Hoshiyar Puri":
+                            "Relish authentic North Indian dishes like dal makhani, paneer, and tandoori breads at this legendary eatery."
+                        },
+                    ], 
+                    "9:00 PM: Overnight stay in Haridwar.": [
+                    ]
+                },
+                "Day 2": {
+                    "Rishikesh – Yoga, Adventure, and Serenity" : [    
+                        {
+                            "7:00 AM – 8:00 AM: Travel to Rishikesh":
+                            "Start towards Rishikesh early Morning which will take approx 1 hour."
+                        },
+                        {
+                            "8:00 AM – 9:00 AM: Breakfast at Freedom Cafe":
+                            "Enjoy a hearty breakfast with views of the Ganga, offering a mix of Indian and continental options."
+                        },
+                        {
+                            "9:30 AM – 11:00 AM: Laxman Jhula and Ram Jhula":
+                            "Walk across these iconic suspension bridges, enjoy the views, and explore nearby cafes and shops."
+                        },
+                        {
+                            "11:30 AM – 1:00 PM: Beatles Ashram (Maharishi Mahesh Yogi Ashram)":
+                            "Explore this graffiti-filled, serene space where the Beatles stayed and composed music."
+                        }
+                    ],
+                    "Afternoon": [
+                        {
+                            "1:30 PM – 2:30 PM: Lunch at Little Buddha Cafe":
+                            "Relish organic and vegetarian global cuisine with breathtaking views of the river."
+                        },
+                        {
+                            "3:00 PM – 5:00 PM: Adventure Activities":
+                            "Try white-water rafting on the Ganga or visit Neer Garh Waterfall for a short trek and refreshing experience."
+                        },
+                    ], 
+                    "Evening":[
+                        {
+                            "5:30 PM – 6:30 PM: Parmarth Niketan and Ganga Aarti":
+                            "Participate in or observe the serene Ganga Aarti at Parmarth Niketan ashram."
+                        },
+                        {
+                            "7:00 PM – 8:30 PM: Dinner at A Tavola Con Te":
+                            "Enjoy authentic wood-fired pizzas and Italian cuisine in a cozy ambiance."
+                        },
+                    ], 
+                    "9:00 PM: Return to Haridwar or stay overnight in Rishikesh.": [
+
+                    ]
+                },
+            }
+    },
 ]
 
 export const data = [
@@ -2354,17 +2554,9 @@ export const data = [
         tourHeadline:"Sampoorna Brij Darshan",
         tourPlaces:"Mathura-Vrindavan-Goverdhan-Gokul-Barsana",
         rating: `5 (342)`,
-        image:gokul,
-        duration:"3 Days & 2 Night",
-        tourData: tourItnerayData[2]
-    },
-    {
-        tourHeadline:"Brijdham darshan and Parikrama",
-        tourPlaces:"Mathura-Vrindavan-Goverdhan-Gokul-Barsana",
-        rating: `5 (356)`,
         image:parikrama,
         duration:"3 Days & 2 Night",
-        tourData: tourItnerayData[0]
+        tourData: tourItnerayData[2]
     },
     {
         tourHeadline:"Two Days Taj and Agra Trip",
@@ -2407,7 +2599,7 @@ export const data = [
         tourData: tourItnerayData[7]
     },
     {
-        tourHeadline:"3 Days Delhi, Mathura and Agra Trip",
+        tourHeadline:"3 Days Delhi Mathura and Agra Trip",
         tourPlaces:"Delhi-Agra-Mathura",
         rating: `5 (189)`,
         image:indiaGate,
@@ -2495,23 +2687,23 @@ export const data = [
         tourData: tourItnerayData[18] 
     },
     {
-        tourHeadline:"1 week Delhi Agra & Complete Brij Tour",
-        tourPlaces:"Delhi-Agra-Mathura-Vrindavan",
-        rating: `5 (189)`,
+        tourHeadline:"Two Days Dehradun Trip",
+        tourPlaces:"Dehradun",
+        rating: `4 (145)`,
         image:indiaGate,
-        duration:"7 Days & 6 Night",
-        tourData: tourItnerayData[0]
+        duration:"2 Days & 1 Night",
+        tourData: tourItnerayData[19]
     },
     {
-        tourHeadline:"7 Days Delhi Haridwar Rishikesh Agra Mathura Vrindavan",
-        tourPlaces:"Delhi-Haridwar-Rishikesh-Agra-Mathura-Vrindavan",
-        rating: `4.6 (233)`,
+        tourHeadline:"Two Days Haridwar and Rishikesh Trip",
+        tourPlaces:"Haridwar-Rishikesh",
+        rating: `4.6 (121)`,
         image:haridwar,
-        duration:"7 Days & 6 Night",
-        tourData: tourItnerayData[0]
+        duration:"2 Days & 1 Night",
+        tourData: tourItnerayData[20]
     },
     {
-        tourHeadline:"2 Days Delhi & Agra Tour",
+        tourHeadline:"2 Days Delhi & Agra",
         tourPlaces:"Delhi-Agra",
         rating: `4.6 (123)`,
         image:akshardham,
