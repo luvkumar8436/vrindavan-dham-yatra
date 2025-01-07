@@ -2,7 +2,6 @@ import prem_mandir_img from './images/prem-mandir-night.jpg'
 
 export const tourItnerayData = [
     {
-        fromLocation: "banglore",
         tourHeadline: "Mathura Vrindavan Tour From Banglore",
         highlights: [
             "Raman Reti",
@@ -197,6 +196,7 @@ export const tourItnerayData = [
 export const fromData = [
     {
         tourHeadline:"Mathura Vrindavan Tour From Banglore",
+        fromLocation: "banglore",
         tourPlaces:"Mathura-Vrindavan",
         rating: `5 (81)`,
         image:prem_mandir_img,

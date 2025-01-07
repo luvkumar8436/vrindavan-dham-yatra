@@ -10,6 +10,13 @@ import PackagePage from './components/PackagePage'
 import Footer from './components/Footer';
 import Query from './components/Queries';
 import PackageFromPage from './components/PackageFromPage';
+const locations = [
+  "hyderabad",
+  "banglore",
+  "gurgaon",
+  "chandigarh",
+  "pune"
+]
 
 function App() {
   return (
@@ -22,8 +29,16 @@ function App() {
           {/* <Route path="/famous-temples/:templeName" element={<FamousTemples />} /> */}
           <Route path="/tourist-packages/:packageName" element={<PackagePage />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/tour-packages-from-banglore" element={<PackageFromPage />} />
-          <Route path="/tour-packages-from-banglore/:packageName" element={<PackagePage />} />
+          {
+            locations.map(
+              location => (
+                <>
+                  <Route path={`/tour-packages-from-${location}`} element={<PackageFromPage />} />
+                  <Route path={`/tour-packages-from-${location}/:packageName`} element={<PackagePage />} />
+                </>
+              )
+            )
+          }
         </Routes>
         <Query />
         <Footer />
