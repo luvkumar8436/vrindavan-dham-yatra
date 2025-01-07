@@ -22,8 +22,8 @@ function App() {
           {/* <Route path="/famous-temples/:templeName" element={<FamousTemples />} /> */}
           <Route path="/tourist-packages/:packageName" element={<PackagePage />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/tour-packages-from-hyderabad" element={<PackageFromPage />} />
-          <Route path="/tour-packages-from-hyderabad/:packageName" element={<PackagePage />} />
+          <Route path="/tour-packages-from-banglore" element={<PackageFromPage />} />
+          <Route path="/tour-packages-from-banglore/:packageName" element={<PackagePage />} />
         </Routes>
         <Query />
         <Footer />

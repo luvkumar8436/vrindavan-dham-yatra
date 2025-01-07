@@ -78,11 +78,11 @@ const Navbar = () => {
         <li >
           <span onClick={handleSubmenuClick} >Packages From<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div  className={`${styles[`${dropDownContainerClass}`]}`} >
-            <p>Hyderabad</p>
-            <p>Banglore</p>
-            <p>Pune</p>
-            <p>Chandigarh</p>
-            <p>Gurgaon</p>
+            <Link to={"/tour-packages-from-hyderabad/"} > <p>Hyderabad</p> </Link>
+            <Link to={"/tour-packages-from-banglore/"} ><p>Banglore</p></Link>
+            <Link to={"/tour-packages-from-pune/"} ><p>Pune</p></Link>
+            <Link to={"/tour-packages-from-chandigarh/"} ><p>Chandigarh</p></Link>
+            <Link to={"/tour-packages-from-gurgaon/"} ><p>Gurgaon</p></Link>
           </div>
         </li>
         <li>About</li>
