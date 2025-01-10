@@ -10,13 +10,7 @@ import PackagePage from './components/PackagePage'
 import Footer from './components/Footer';
 import Query from './components/Queries';
 import PackageFromPage from './components/PackageFromPage';
-const locations = [
-  "hyderabad",
-  "banglore",
-  "gurgaon",
-  "chandigarh",
-  "pune"
-]
+import {locations} from "./components/toursFromData.js"
 
 function App() {
   return (
@@ -33,8 +27,8 @@ function App() {
             locations.map(
               location => (
                 <>
-                  <Route path={`/tour-packages-from-${location}`} element={<PackageFromPage />} />
-                  <Route path={`/tour-packages-from-${location}/:packageName`} element={<PackagePage />} />
+                  <Route path={`/tour-packages-from-${location.toLowerCase()}`} element={<PackageFromPage />} />
+                  <Route path={`/tour-packages-from-${location.toLowerCase()}/:packageName`} element={<PackagePage />} />
                 </>
               )
             )

@@ -16,7 +16,7 @@ const PackageFromPage = () => {
             <div className={styles["package-outer-container"]} >
                 <h2>{`Packages from ${locationURL.split("-")[3].charAt(0).toUpperCase() + locationURL.split("-")[3].substring(1)}`} </h2>
                 <div className="package-container" >
-                    {fromData.filter(data => data.fromLocation === locationURL.split("-")[3]).map( (item, key) => 
+                    {fromData.filter(data => data.fromLocation.toLowerCase() === locationURL.split("-")[3]).map( (item, key) => 
                         <Package
                         tourHeadline={item.tourHeadline}
                         tourPlaces={item.tourPlaces}

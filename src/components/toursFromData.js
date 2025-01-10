@@ -1,8 +1,18 @@
 import prem_mandir_img from './images/prem-mandir-night.jpg'
+export const locations = [
+    "Banglore",
+    "Hyderabad",
+    "Chandigarh",
+    "Pune",
+    "Gurgaon",
+    "Chennai",
+    "Kolkata"
+]
+    
 
-export const tourItnerayData = [
-    {
-        tourHeadline: "Mathura Vrindavan Tour From Banglore",
+function MathuraVrindavaTour(location){
+    return {
+        tourHeadline: `Mathura Vrindavan Tour From ${location}`,
         highlights: [
             "Raman Reti",
             "Shri Krishna Janmbhoomi",
@@ -22,10 +32,10 @@ export const tourItnerayData = [
         itenary:
         {
             "Day 1": {
-                "Banglore to Mathura" : [
+                [`${location} to Mathura`]: [
                     {
                         "Flight to Delhi": [
-                            "Take an early morning flight from Banglore to Delhi (approx 2.5 hours)."
+                            `Take an early morning flight from ${location} to Delhi (approx 2.5 hours).`
                         ]
                     },
                     {
@@ -190,288 +200,294 @@ export const tourItnerayData = [
                 ]
             }
         }
-    },
-    {
-        tourHeadline: "Mathura Vrindavan and Agra Tour From Banglore",
-        highlights: [
-            "Raman Reti",
-            "Shri Krishna Janmbhoomi",
-            "Dwarikadhish Temple",
-            "Vishram Ghat",
-            "Shri Nand Baba Temple",
-            "Radha Rani Temple",
-            "Kirti Mandir",
-            "Radha Kund",
-            "Goverdhan Hill",
-            "Isckon temple",
-            "Banke Bihari Mandir",
-            "Nidhivan",
-            "Prem Mandir",
-            "Fatehpur Sikri",
-            "Buland Darwaza",
-            "Jama Masjid",
-            "Tomb of Salim Chishti",
-            "Itimad-ud-Daulah",
-            "Agra Fort",
-            "Taj Mahal"
-        ],
-        itenary:
-        {
-            "Day 1": {
-                "Bangalore to Delhi - Mathura and Vrindavan" : [
-                    {
-                        "Flight to Delhi": [
-                            "Take an early morning flight (approx. 2.5–3 hours) from Bangalore to Delhi.",
-                            "Upon arrival in Delhi, drive to Mathura (3–4 hours, approx. 170 km)."
-                        ]
-                    },
-                ],
-                "Afternoon (2:00 PM - 5:00 PM)": [
-                    {
-                        "Lunch in Mathura": [
-                            "Visit Brijwasi Mithai Wala for authentic Mathura peda, kachoris, and chaat.",
-                            "Try their thali for a full traditional meal."
-                        ]
-                    },
-                    {
-                        "Krishna Janmabhoomi Temple Complex" : [
-                            "Visit the birthplace of Lord Krishna. The temple complex offers spiritual vibes and historical significance.",
-                            "Snacks: Enjoy local delicacies like kachoris and lassi at Shankar Mithai Wala or nearby stalls in Mathura."                                                               
-                        ]
+    }
+}
 
-                    },
-                    {
-                        "Dwarkadhish Temple" : 
-                        [
-                            "Visit this famous temple with its beautiful architecture. The darshan and quiet ambiance are worth experiencing."                                
-                        ]
-                    },
-                ],
-                "Evening (5:00 PM - 8:00 PM)": [
-                    {
-                        "Raman Reti (5:00 PM - 6:00 PM)":
-                        [
-                            "Return to Raman Reti after it reopens for evening darshan. Participate in the aarti at 7:00 PM, which is a highlight of the day."
-                        ]
-                    },
-                    {
-                        "Vishram Ghat (if time permits)": 
-                        [
-                            "End your day with a peaceful Yamuna boat ride or a short visit to Vishram Ghat in Mathura."
-                        ],
-                    },
-                    {
-                        "Dinner (8:00 PM Onwards)": [
-                            "Enjoy dinner at Brijwasi Royal Mithaiwala or Brijwasi Bhojnalaya in Mathura, known for authentic dishes like dal-baati churma and sweets like peda."
-                        ]
-                    }
-                ],
-                "Street Food Spots": [
-                    {
-                        "Deeg Gate Market":
-                        [
-                            "What to Try: Kachori-sabzi, samosas, and laddoos.",
-                            "Why Visit: A bustling market offering a true taste of local street food."                                
-                        ]
-                    },
-                    {
-                        "Tilak Dwar":
-                        [
-                            "What to Try: Peda and thandai.",
-                            "Why Visit: A vibrant area where you can enjoy street-side stalls selling local delicacies."                                
-                        ]
-                    }
-                ]
-                
-            },
-            "Day 2": {
-                "Vrindavan - In Krishna’s Playground" : [
-                    {
-                        "Morning (6:00 AM - 12:00 PM)":
-                        [
-                            "Banke Bihari Temple: Arrive by 6:00 AM to experience the vibrant early morning mangal aarti. Allocate about 1.5 hours for darshan and exploration.",
-                            "ISKCON Temple: Head here by 8:00 AM for its serene morning prayers. Spend an hour meditating and enjoying the calm ambiance.",
-                            "Nidhi Van and Seva Kunj: Visit these sacred groves around 10:30 AM before the temples close. These places don't have strict closing times, so you can explore leisurely."                                
-                        ]
-                    },
-                ],
-                "Afternoon (12:00 PM - 4:00 PM)": [
-                    {
-                        "Enjoy Lunch" : 
-                        [
-                            "Have a delicious meal at Govinda’s (ISKCON Restaurant) or a nearby café offering local vegetarian dishes."
-                        ]
-                    },
-                    {
-                        "Visit Non-Temple Sites" : 
-                        [
-                            "Local Markets: Explore Vrindavan’s streets for souvenirs, sweets (pedas, kachoris), and handicrafts.",
-                            "Yamuna River Banks: Spend some quiet time or take a boat ride."                                
-                        ]
-                    },
-                ],
-                "Evening (4:00 PM - 8:00 PM)": [
-                    {
-                        "Prem Mandir": [
-                            "Reopen around 4:00 PM, this temple is perfect for an evening visit. Its lighting after sunset is mesmerizing."
-                        ]
-                    },
-                    {
-                        "Rangji Temple": [
-                            "Famous for its South Indian architecture, this temple can be visited after 5:00 PM when it reopens."
-                        ]
-                    },
-                    {
-                        "Dinner": [
-                            "End the day with local specialties like chaat or a full vegetarian meal at a popular restaurant."
-                        ]
-                    }
-                ],
-                "Dinner Recommendations": [
-                    {
-                        "Govinda’s Restaurant (ISKCON, Vrindavan)": [
-                            "What to Try: Authentic sattvic food, including curries and rice dishes.",
-                            "Why Visit: Perfect for a peaceful dining experience with Krishna-inspired cuisine."                                
-                        ]
-                    },
-                    {
-                        "Chhappan Bhog": [
-                            "What to Try: Full vegetarian meals and a variety of desserts.",
-                            "Why Visit: Known for its clean environment and delectable food options."                                
-                        ]
-                    }
-                ]
-            },
-            "Day 3": {
-                "Barsana, Nandgaon, and Govardhan": [
-                    {
-                        "Morning (6:00 AM - 11:00 AM)":
-                        [
-                            "Barsana: Visit Radha Rani Temple and explore this vibrant town. It’s steeped in the lore of Krishna and Radha’s divine love​",
-                            "Nandgaon: Explore Nand Bhavan and other spots related to Krishna’s childhood."
-                        ]
-                    },
-                    {
-                        "Afternoon (12:00 PM - 4:00 PM)":
-                        ["Govardhan Hill: Engage in a partial parikrama (walking or by e-rickshaw) around the sacred hill. Visit nearby temples such as Daan Ghati and Mansi Ganga​"]
-                    },
-                    {
-                        "Evening (4:00 PM - 7:00 PM)":
-                        ["Return to Mathura: Wrap up your trip with a relaxed dinner and perhaps shop for souvenirs like religious artifacts, sweets, and handicrafts."]
-                    },  
-                ],
-                "Authentic Brijwasi Style Dinner recommendation": [
-                    {
-                        "Shri Radha Rasoi (Near Radha Rani Temple)":
-                        [
-                            "This restaurant offers pure vegetarian meals focusing on traditional Braj cuisine like Kachori-sabzi and sweets like Ghewar."
-                        ]
-                    },
-                    {
-                        "Govardhan Bhojanalay":
-                        [
-                            "Close to Kusum Sarovar and Daan Ghati, this eatery specializes in traditional satvik meals suitable for spiritual travelers."
-                        ]
-                    },
-                    {
-                        "Prakash Bhojnalaya":
-                        [
-                            "Near Radha Kund, it is a well-known place offering hearty meals, including local thalis with dal, roti, sabzi, and fresh curd."
-                        ]
-                    }
-                ]
-            },
-            "Day 4": {
-                "Mathura to Agra" : [
-                    {
-                        "Morning" : 
-                        "Drive to Agra (1.5–2 hours)"
-                    },
-                    {
-                        "Breakfast" : 
-                        "En route at a highway dhaba offering stuffed parathas with curd and pickle."
-                    },
-                ],
-                "Late Morning in Agra": [
-                    {
-                        "Taj Mahal" :[ 
-                        "Visit the Taj Mahal and experience its grandeur.",
-                        "Time: 2–3 hours"
-                        ]
-                    },
-                ],
-                "Afternoon": [
-                    {
-                        "Lunch":
-                        "Pinch of Spice, known for its Mughlai dishes and kebabs."
-                    },
-                    {
-                        "Agra Fort":
-                        "Explore the Agra Fort, a UNESCO World Heritage Site."
-                    },
-                    {
-                        "Baby Taj": 
-                        "Visit Itimad-ud-Daulah (Baby Taj) for its intricate marble work."
-                    },
-                ],
-                "Evening": [
-                    {
-                        "Sunset at Mehtab Bagh":
-                        "Enjoy sunset views of the Taj Mahal from Mehtab Bagh, a serene garden across the Yamuna River."
-                    },
-                ],     
-                "Dinner": [
-                    {
-                        "Dasaprakash": [
-                        "Dasaprakash, offering South Indian and North Indian options.",
-                        "Overnight stay in Agra."
-                        ]
-                    }
-                ]
-            },
-            "Day 5": {
-                "Fatehpur Sikri and Bharatpur - Return to Bangalore" : [
-                    {
-                        "Morning in Fatehpur Sikri" : [
-                        "Drive to Fatehpur Sikri (1 hour)",
-                        "Visit Buland Darwaza, Jama Masjid, and Tomb of Salim Chishti",
-                        "Time: 2.5–3 hours"
-                        ]
-                    },
-                    {
-                        "Lunch" : 
-                        "Surahi Restaurant in Fatehpur Sikri, offering North Indian dishes."
-                    },
-                ],
-                "Afternoon in Bharatpur": [
-                    {
-                        "Drive to Bharatpur (1 hour)" :[ 
-                        "Visit Keoladeo National Park, famous for birdwatching.",
-                        "Time: 2 hours"
-                        ]
-                    },
-                ],
-                "Evening Return to Delhi": [
-                    {
-                        "Agra to Delhi":
-                        "Drive back to Delhi (3–4 hours) for your flight to Bangalore.",
-                    },
-                    {
-                        "Dinner":
-                        "Stop at a highway dhaba for authentic North Indian cuisine."
-                    },
-                ],
-                "Delhi to Banglore Return ": [
-                    {
-                        "Late Night Departure":
-                        "Take a late-night flight from Delhi to Bangalore."
-                    },
-                ],
-            },
+function MathuraVrindavanAgra(location) {
+    return {
+            tourHeadline: `Mathura Vrindavan and Agra Tour From ${location}`,
+            highlights: [
+                "Raman Reti",
+                "Shri Krishna Janmbhoomi",
+                "Dwarikadhish Temple",
+                "Vishram Ghat",
+                "Shri Nand Baba Temple",
+                "Radha Rani Temple",
+                "Kirti Mandir",
+                "Radha Kund",
+                "Goverdhan Hill",
+                "Isckon temple",
+                "Banke Bihari Mandir",
+                "Nidhivan",
+                "Prem Mandir",
+                "Fatehpur Sikri",
+                "Buland Darwaza",
+                "Jama Masjid",
+                "Tomb of Salim Chishti",
+                "Itimad-ud-Daulah",
+                "Agra Fort",
+                "Taj Mahal"
+            ],
+            itenary:
+            {
+                "Day 1": {
+                    [`${location} to Delhi - Mathura and Vrindavan`] : [
+                        {
+                            "Flight to Delhi": [
+                                `Take an early morning flight (approx. 2.5–3 hours) from ${location} to Delhi.`,
+                                "Upon arrival in Delhi, drive to Mathura (3–4 hours, approx. 170 km)."
+                            ]
+                        },
+                    ],
+                    "Afternoon (2:00 PM - 5:00 PM)": [
+                        {
+                            "Lunch in Mathura": [
+                                "Visit Brijwasi Mithai Wala for authentic Mathura peda, kachoris, and chaat.",
+                                "Try their thali for a full traditional meal."
+                            ]
+                        },
+                        {
+                            "Krishna Janmabhoomi Temple Complex" : [
+                                "Visit the birthplace of Lord Krishna. The temple complex offers spiritual vibes and historical significance.",
+                                "Snacks: Enjoy local delicacies like kachoris and lassi at Shankar Mithai Wala or nearby stalls in Mathura."                                                               
+                            ]
+    
+                        },
+                        {
+                            "Dwarkadhish Temple" : 
+                            [
+                                "Visit this famous temple with its beautiful architecture. The darshan and quiet ambiance are worth experiencing."                                
+                            ]
+                        },
+                    ],
+                    "Evening (5:00 PM - 8:00 PM)": [
+                        {
+                            "Raman Reti (5:00 PM - 6:00 PM)":
+                            [
+                                "Return to Raman Reti after it reopens for evening darshan. Participate in the aarti at 7:00 PM, which is a highlight of the day."
+                            ]
+                        },
+                        {
+                            "Vishram Ghat (if time permits)": 
+                            [
+                                "End your day with a peaceful Yamuna boat ride or a short visit to Vishram Ghat in Mathura."
+                            ],
+                        },
+                        {
+                            "Dinner (8:00 PM Onwards)": [
+                                "Enjoy dinner at Brijwasi Royal Mithaiwala or Brijwasi Bhojnalaya in Mathura, known for authentic dishes like dal-baati churma and sweets like peda."
+                            ]
+                        }
+                    ],
+                    "Street Food Spots": [
+                        {
+                            "Deeg Gate Market":
+                            [
+                                "What to Try: Kachori-sabzi, samosas, and laddoos.",
+                                "Why Visit: A bustling market offering a true taste of local street food."                                
+                            ]
+                        },
+                        {
+                            "Tilak Dwar":
+                            [
+                                "What to Try: Peda and thandai.",
+                                "Why Visit: A vibrant area where you can enjoy street-side stalls selling local delicacies."                                
+                            ]
+                        }
+                    ]
+                    
+                },
+                "Day 2": {
+                    "Vrindavan - In Krishna’s Playground" : [
+                        {
+                            "Morning (6:00 AM - 12:00 PM)":
+                            [
+                                "Banke Bihari Temple: Arrive by 6:00 AM to experience the vibrant early morning mangal aarti. Allocate about 1.5 hours for darshan and exploration.",
+                                "ISKCON Temple: Head here by 8:00 AM for its serene morning prayers. Spend an hour meditating and enjoying the calm ambiance.",
+                                "Nidhi Van and Seva Kunj: Visit these sacred groves around 10:30 AM before the temples close. These places don't have strict closing times, so you can explore leisurely."                                
+                            ]
+                        },
+                    ],
+                    "Afternoon (12:00 PM - 4:00 PM)": [
+                        {
+                            "Enjoy Lunch" : 
+                            [
+                                "Have a delicious meal at Govinda’s (ISKCON Restaurant) or a nearby café offering local vegetarian dishes."
+                            ]
+                        },
+                        {
+                            "Visit Non-Temple Sites" : 
+                            [
+                                "Local Markets: Explore Vrindavan’s streets for souvenirs, sweets (pedas, kachoris), and handicrafts.",
+                                "Yamuna River Banks: Spend some quiet time or take a boat ride."                                
+                            ]
+                        },
+                    ],
+                    "Evening (4:00 PM - 8:00 PM)": [
+                        {
+                            "Prem Mandir": [
+                                "Reopen around 4:00 PM, this temple is perfect for an evening visit. Its lighting after sunset is mesmerizing."
+                            ]
+                        },
+                        {
+                            "Rangji Temple": [
+                                "Famous for its South Indian architecture, this temple can be visited after 5:00 PM when it reopens."
+                            ]
+                        },
+                        {
+                            "Dinner": [
+                                "End the day with local specialties like chaat or a full vegetarian meal at a popular restaurant."
+                            ]
+                        }
+                    ],
+                    "Dinner Recommendations": [
+                        {
+                            "Govinda’s Restaurant (ISKCON, Vrindavan)": [
+                                "What to Try: Authentic sattvic food, including curries and rice dishes.",
+                                "Why Visit: Perfect for a peaceful dining experience with Krishna-inspired cuisine."                                
+                            ]
+                        },
+                        {
+                            "Chhappan Bhog": [
+                                "What to Try: Full vegetarian meals and a variety of desserts.",
+                                "Why Visit: Known for its clean environment and delectable food options."                                
+                            ]
+                        }
+                    ]
+                },
+                "Day 3": {
+                    "Barsana, Nandgaon, and Govardhan": [
+                        {
+                            "Morning (6:00 AM - 11:00 AM)":
+                            [
+                                "Barsana: Visit Radha Rani Temple and explore this vibrant town. It’s steeped in the lore of Krishna and Radha’s divine love​",
+                                "Nandgaon: Explore Nand Bhavan and other spots related to Krishna’s childhood."
+                            ]
+                        },
+                        {
+                            "Afternoon (12:00 PM - 4:00 PM)":
+                            ["Govardhan Hill: Engage in a partial parikrama (walking or by e-rickshaw) around the sacred hill. Visit nearby temples such as Daan Ghati and Mansi Ganga​"]
+                        },
+                        {
+                            "Evening (4:00 PM - 7:00 PM)":
+                            ["Return to Mathura: Wrap up your trip with a relaxed dinner and perhaps shop for souvenirs like religious artifacts, sweets, and handicrafts."]
+                        },  
+                    ],
+                    "Authentic Brijwasi Style Dinner recommendation": [
+                        {
+                            "Shri Radha Rasoi (Near Radha Rani Temple)":
+                            [
+                                "This restaurant offers pure vegetarian meals focusing on traditional Braj cuisine like Kachori-sabzi and sweets like Ghewar."
+                            ]
+                        },
+                        {
+                            "Govardhan Bhojanalay":
+                            [
+                                "Close to Kusum Sarovar and Daan Ghati, this eatery specializes in traditional satvik meals suitable for spiritual travelers."
+                            ]
+                        },
+                        {
+                            "Prakash Bhojnalaya":
+                            [
+                                "Near Radha Kund, it is a well-known place offering hearty meals, including local thalis with dal, roti, sabzi, and fresh curd."
+                            ]
+                        }
+                    ]
+                },
+                "Day 4": {
+                    "Mathura to Agra" : [
+                        {
+                            "Morning" : 
+                            "Drive to Agra (1.5–2 hours)"
+                        },
+                        {
+                            "Breakfast" : 
+                            "En route at a highway dhaba offering stuffed parathas with curd and pickle."
+                        },
+                    ],
+                    "Late Morning in Agra": [
+                        {
+                            "Taj Mahal" :[ 
+                            "Visit the Taj Mahal and experience its grandeur.",
+                            "Time: 2–3 hours"
+                            ]
+                        },
+                    ],
+                    "Afternoon": [
+                        {
+                            "Lunch":
+                            "Pinch of Spice, known for its Mughlai dishes and kebabs."
+                        },
+                        {
+                            "Agra Fort":
+                            "Explore the Agra Fort, a UNESCO World Heritage Site."
+                        },
+                        {
+                            "Baby Taj": 
+                            "Visit Itimad-ud-Daulah (Baby Taj) for its intricate marble work."
+                        },
+                    ],
+                    "Evening": [
+                        {
+                            "Sunset at Mehtab Bagh":
+                            "Enjoy sunset views of the Taj Mahal from Mehtab Bagh, a serene garden across the Yamuna River."
+                        },
+                    ],     
+                    "Dinner": [
+                        {
+                            "Dasaprakash": [
+                            "Dasaprakash, offering South Indian and North Indian options.",
+                            "Overnight stay in Agra."
+                            ]
+                        }
+                    ]
+                },
+                "Day 5": {
+                    [`Fatehpur Sikri and Bharatpur - Return to ${location}`] : [
+                        {
+                            "Morning in Fatehpur Sikri" : [
+                            "Drive to Fatehpur Sikri (1 hour)",
+                            "Visit Buland Darwaza, Jama Masjid, and Tomb of Salim Chishti",
+                            "Time: 2.5–3 hours"
+                            ]
+                        },
+                        {
+                            "Lunch" : 
+                            "Surahi Restaurant in Fatehpur Sikri, offering North Indian dishes."
+                        },
+                    ],
+                    "Afternoon in Bharatpur": [
+                        {
+                            "Drive to Bharatpur (1 hour)" :[ 
+                            "Visit Keoladeo National Park, famous for birdwatching.",
+                            "Time: 2 hours"
+                            ]
+                        },
+                    ],
+                    "Evening Return to Delhi": [
+                        {
+                            "Agra to Delhi":
+                            `Drive back to Delhi (3–4 hours) for your flight to ${location}.`,
+                        },
+                        {
+                            "Dinner":
+                            "Stop at a highway dhaba for authentic North Indian cuisine."
+                        },
+                    ],
+                    [`Delhi to ${location} Return`] : [
+                        {
+                            "Late Night Departure":
+                            `Take a late-night flight from Delhi to ${location}.`
+                        },
+                    ],
+                },
+            }
         }
-    },
-    {
-        tourHeadline: "Mathura Vrindavan Agra and Delhi Tour From Banglore",
+}
+
+function MathuraVrindavanAgraDelhi(location){
+    return {
+        tourHeadline: `Mathura Vrindavan Agra and Delhi Tour From ${location}`,
         highlights: [
             "Raman Reti",
             "Shri Krishna Janmbhoomi",
@@ -503,10 +519,10 @@ export const tourItnerayData = [
         itenary:
         {
             "Day 1": {
-                "Bangalore to Delhi - Mathura and Vrindavan" : [
+                [`${location} to Delhi - Mathura and Vrindavan `]: [
                     {
                         "Flight to Delhi": [
-                            "Take an early morning flight (approx. 2.5–3 hours) from Bangalore to Delhi.",
+                            `Take an early morning flight (approx. 2.5–3 hours) from ${location} to Delhi.`,
                             "Upon arrival in Delhi, drive to Mathura (3–4 hours, approx. 170 km)."
                         ]
                     },
@@ -523,7 +539,6 @@ export const tourItnerayData = [
                             "Visit the birthplace of Lord Krishna. The temple complex offers spiritual vibes and historical significance.",
                             "Snacks: Enjoy local delicacies like kachoris and lassi at Shankar Mithai Wala or nearby stalls in Mathura."                                                               
                         ]
-
                     },
                     {
                         "Dwarkadhish Temple" : 
@@ -566,8 +581,7 @@ export const tourItnerayData = [
                             "Why Visit: A vibrant area where you can enjoy street-side stalls selling local delicacies."                                
                         ]
                     }
-                ]
-                
+                ]     
             },
             "Day 2": {
                 "Vrindavan - In Krishna’s Playground" : [
@@ -715,7 +729,7 @@ export const tourItnerayData = [
                 ]
             },
             "Day 5": {
-                "Agra to Delhi - Return to Bangalore" : [
+                [`Agra to Delhi - Return to ${location}`] : [
                     {
                         "Morning in Fatehpur Sikri" : [
                         "Drive to Fatehpur Sikri (1 hour)",
@@ -745,10 +759,10 @@ export const tourItnerayData = [
                         "At Kake Da Hotel in Connaught Place for authentic North Indian curries and breads."
                     },
                 ],
-                "Delhi to Banglore Return ": [
+                [`Delhi to  Return ${location}`]: [
                     {
                         "Late Night Departure":
-                        "Take a late-night flight from Delhi to Bangalore."
+                        `Take a late-night flight from Delhi to ${location}.`
                     },
                 ],
             },
@@ -801,16 +815,19 @@ export const tourItnerayData = [
                 ],
                 "Late Night Departure": [
                     {
-                        "Delhi to Banglore":
-                        "Take a late-night flight from Delhi to Bangalore."
+                        [`Delhi to ${location}`]:
+                        `Take a late-night flight from Delhi to ${location}.`
                     }
                 ]
             },
 
         }
-    },
-    {
-        tourHeadline: "Mathura Vrindavan Haridwar and Rishikesh Tour From Banglore",
+    }
+} 
+
+function MathuraVrindavanHaridwarRishikesh(location){
+    return {
+        tourHeadline: `Mathura Vrindavan Haridwar and Rishikesh Tour From ${location}`,
         highlights: [
             "Shri Krishna Janmbhoomi",
             "Dwarikadhish Temple",
@@ -836,10 +853,10 @@ export const tourItnerayData = [
         itenary:
         {
             "Day 1": {
-                "Bangalore to Delhi - Mathura and Vrindavan" : [
+                [`${location} to Delhi - Mathura and Vrindavan`] : [
                     {
                         "Flight to Delhi": [
-                            "Take an early morning flight (approx. 2.5–3 hours) from Bangalore to Delhi.",
+                            `Take an early morning flight (approx. 2.5–3 hours) from ${location} to Delhi.`,
                             "Upon arrival in Delhi, drive to Mathura (3–4 hours, approx. 170 km)."
                         ]
                     },
@@ -855,16 +872,14 @@ export const tourItnerayData = [
                         "Krishna Janmabhoomi Temple Complex" : [
                             "Visit the birthplace of Lord Krishna. The temple complex offers spiritual vibes and historical significance.",
                             "Snacks: Enjoy local delicacies like kachoris and lassi at Shankar Mithai Wala or nearby stalls in Mathura."                                                               
-                        ]
-    
+                        ]            
                     },
                     {
                         "Dwarkadhish Temple" : 
                         [
                             "Visit this famous temple with its beautiful architecture. The darshan and quiet ambiance are worth experiencing."                                
                         ]
-                    },
-                    
+                    },                    
                 ],
                 "Evening in Vrindavan": [
                     {
@@ -1040,7 +1055,7 @@ export const tourItnerayData = [
                 ]
             },
             "Day 5": {
-                "Haridwar to Delhi – Return to Bangalore" : [
+                [`Haridwar to Delhi – Return to ${location}`] : [
                     {
                         "Breakfast" : 
                         "At a local Haridwar eatery offering puri bhaji and chai."
@@ -1054,53 +1069,55 @@ export const tourItnerayData = [
                         ]
                     },
                 ],
-                "Delhi to Banglore Return ": [
+                [`Delhi to ${location} Return `]: [
                     {
                         "Late Night Departure":
-                        "Take a flight from Delhi to Bangalore."
+                        `Take a flight from Delhi to ${location}.`
                     },
                 ],
             },
         }
     }
-]
+}
 
-export const fromData = [
-    {
-        tourHeadline:"Mathura Vrindavan Tour From Banglore",
-        fromLocation: "banglore",
+export const fromData = [];
+
+for(let i=0;i<locations.length;i++){
+    const location = locations[i];
+    fromData.push({
+        tourHeadline:`Mathura Vrindavan Tour From ${location}`,
+        fromLocation: `${location}`,
         tourPlaces:"Mathura-Vrindavan",
         rating: `5 (81)`,
         image:prem_mandir_img,
         duration:"3 Days & 2 Nights",
-        tourData: tourItnerayData[0]
-    },
-    {
-        tourHeadline:"Mathura Vrindavan and Agra Tour From Banglore",
-        fromLocation: "banglore",
+        tourData: MathuraVrindavaTour(location),
+    })
+    fromData.push({
+        tourHeadline:`Mathura Vrindavan and Agra Tour From ${location}`,
+        fromLocation: `${location}`,
         tourPlaces:"Mathura-Vrindavan-Agra",
         rating: `5 (67)`,
         image:prem_mandir_img,
         duration:"5 Days & 4 Nights",
-        tourData: tourItnerayData[1]
-    },
-    {
-        tourHeadline:"Mathura Vrindavan Agra and Delhi Tour From Banglore",
-        fromLocation: "banglore",
+        tourData: MathuraVrindavanAgra(location),
+    })
+    fromData.push({
+        tourHeadline:`Mathura Vrindavan Agra and Delhi Tour From ${location}`,
+        fromLocation: `${location}`,
         tourPlaces:"Mathura-Vrindavan-Agra-Delhi",
         rating: `5 (91)`,
         image:prem_mandir_img,
         duration:"6 Days & 5 Nights",
-        tourData: tourItnerayData[2]
-    },
-    {
-        tourHeadline: "Mathura Vrindavan Haridwar and Rishikesh Tour From Banglore",
-        fromLocation: "banglore",
+        tourData: MathuraVrindavanAgraDelhi(location)
+    })
+    fromData.push({
+        tourHeadline: `Mathura Vrindavan Haridwar and Rishikesh Tour From ${location}`,
+        fromLocation: `${location}`,
         tourPlaces:"Mathura-Vrindavan-Haridwar-Rishikesh",
         rating: `5 (112)`,
         image:prem_mandir_img,
         duration:"5 Days & 4 Nights",
-        tourData: tourItnerayData[3]
-    }
-    
-]
+        tourData: MathuraVrindavanHaridwarRishikesh(location)
+    })
+}

@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 import Logo from "./Logo";
 import { useState } from "react";
 import { data } from './toursData';               
+import {locations} from "./toursFromData.js"
 
 const Navbar = () => {
   
@@ -78,11 +79,13 @@ const Navbar = () => {
         <li >
           <span onClick={handleSubmenuClick} >Packages From<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div  className={`${styles[`${dropDownContainerClass}`]}`} >
-            <Link to={"/tour-packages-from-hyderabad/"} > <p>Hyderabad</p> </Link>
-            <Link to={"/tour-packages-from-banglore/"} ><p>Banglore</p></Link>
-            <Link to={"/tour-packages-from-pune/"} ><p>Pune</p></Link>
-            <Link to={"/tour-packages-from-chandigarh/"} ><p>Chandigarh</p></Link>
-            <Link to={"/tour-packages-from-gurgaon/"} ><p>Gurgaon</p></Link>
+            {locations.map( location => 
+              (
+                <>
+                  <Link to={`/tour-packages-from-${location.toLowerCase()}/`} > <p>{`${location}`}</p> </Link>
+                </>
+              )
+             )}
           </div>
         </li>
         <li>About</li>
