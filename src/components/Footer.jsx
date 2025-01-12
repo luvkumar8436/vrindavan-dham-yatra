@@ -1,5 +1,8 @@
 import styles from "./Footer.module.css"
 import Logo from "./Logo"
+import insta from "./images/instagram.svg"
+import gmail from "./images/gmail.svg"
+import phone from "./images/phone.svg"
 
 export default function Footer(){
     return(
@@ -28,19 +31,16 @@ export default function Footer(){
                 </ul>
             </div>
             <div className={styles['contact-us']}>
-            <h5>Contact Us</h5>
-            We are 24/7 available.
-
-            Call us at :
-            +91 7451996431, +91 7300620809, 6397587456
-
-            Mail us at :
-            info@vrindavantoursandpackages.com
-
-            Meet us at :
-            Shree Sadguru Seva Sadan,
-            Gokul, Mathura 281303
-
+                <h5>Contact Us</h5>
+                <p>We are 24/7 available.</p>
+                <p>Call us at : +91 7689961477, +91 9760844192</p>
+                <p>Mail us at : info@vrindavantoursandpackages.com</p>
+                <p>Meet us at : Bangali Ghat, Mathura, 281001, UP </p>
+                <div className={styles["icon-container"]}>
+                    <a href="https://www.instagram.com/vrindavan.dham.yatra/" target="blank" ><img src={insta} alt="insta icon" /></a>
+                    <a href="mailto:luvkumar@gmail.com"><img src={gmail} alt="gmail icon" /></a>
+                    <a href="tel:+917689961477"><img src={phone} alt="gmail icon" /></a>
+                </div>
             </div>
         </div>
     )

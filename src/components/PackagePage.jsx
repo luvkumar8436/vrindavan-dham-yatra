@@ -33,7 +33,7 @@ const PackagePage = () => {
                 <DemoCarousel />
                 
                 <div className={styles["form-container"]}>
-                    <CallbackForm />
+                    <CallbackForm text="Request Call"/>
                 </div>
                 <div className={styles["plan-info-container"]}>
                     <h2 className={styles["tour-heading"]} >
@@ -68,7 +68,6 @@ const PackagePage = () => {
                             </> :
                             <></>
                     }
-        
                     <div className={styles["inclusion-container"]}>
                         <div className={styles["heading"]}>
                             Inclusions

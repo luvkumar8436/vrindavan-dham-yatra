@@ -9,7 +9,7 @@ const PackagesList = () => {
         <div className="package-section" >
             <div className="bundle-container">
                 <div className="bundle">
-                    <h2>Best selling Packages</h2>
+                    <h2>Best Selling Packages</h2>
                     <div className="break-line"></div>
                 </div>
             </div>

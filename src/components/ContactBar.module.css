@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 30px;
+    background-color: blueviolet;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+.container img{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 2px 5px;
+}
+.container .number {
+    animation-duration: 30s;
+    animation-name: slide-in;
+    animation-iteration-count: infinite;
+    padding: 2px 0;
+    color: white;
+  }
+  
+  .container .number:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    
+    100%{
+        transform: translateX(100vw);
+    }
+  }
+  

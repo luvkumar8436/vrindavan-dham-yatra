@@ -6,7 +6,7 @@ export default function Query(){
             <div className={styles["sub-container"]} >
                 <h2>Still have Queries</h2>
                 <p>If you need help or have questions, call the number mentioned for assistance.</p>
-                <button>Call +76 89961477</button>
+                <a href="tel:+917689961477"><button>Call +76 89961477</button></a>
             </div>
         
         </div>

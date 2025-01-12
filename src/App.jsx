@@ -1,28 +1,30 @@
 "use client"
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
+import Navbar from './components/Navbar.jsx';
+import Home from './components/Home.jsx';
+import About from './components/About.jsx';
 // import FamousTemples from './components/FamousTemples';
-import ContactUs from './components/ContactUs';
-import PackagePage from './components/PackagePage'
-import Footer from './components/Footer';
-import Query from './components/Queries';
-import PackageFromPage from './components/PackageFromPage';
+import PackagePage from './components/PackagePage.jsx'
+import Footer from './components/Footer.jsx';
+import Query from './components/Queries.jsx';
+import PackageFromPage from './components/PackageFromPage.jsx';
 import {locations} from "./components/toursFromData.js"
+import CallbackForm from './components/CallbackForm.jsx';
+import "./App.css"
+import ContactBar from './components/ContactBar.jsx';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ContactBar />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about" element={<About />} />
           {/* <Route path="/famous-temples/:templeName" element={<FamousTemples />} /> */}
           <Route path="/tourist-packages/:packageName" element={<PackagePage />} />
-          <Route path="/contact-us" element={<ContactUs />} />
           {
             locations.map(
               location => (
@@ -34,6 +36,9 @@ function App() {
             )
           }
         </Routes>
+        <div className="callback">
+          <CallbackForm text="Contact Us" />
+        </div>
         <Query />
         <Footer />
       </div>

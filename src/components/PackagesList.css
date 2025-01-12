@@ -11,6 +11,10 @@
     margin-bottom: 2rem;
     text-align: center;
 }
+
+.bundle h2{
+    font-family: "Protest Strike", sans-serif;
+}
 .package-section h2{
     color: blueviolet;
     font-size: 3rem;

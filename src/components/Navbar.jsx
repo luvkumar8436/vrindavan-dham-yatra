@@ -18,6 +18,11 @@ const Navbar = () => {
   
   function handleNavClick(event){
     setOpen(!isOpen);
+    if(isOpen===true){
+      console.log(event)
+      event.target.parentNode.parentNode.childNodes[2].childNodes[2].childNodes[1].style.display = "";
+      event.target.parentNode.parentNode.childNodes[2].childNodes[3].childNodes[1].style.display = "";
+    }
   }
 
   function handleSubmenuClick(event){
@@ -69,7 +74,15 @@ const Navbar = () => {
         {
           isOpen ? <Logo /> : ""
         }
-        <li>Home</li>
+        <NavLink 
+        style={({ isActive }) => ({
+            color: isActive
+            ? "grey"
+            : "black",
+            listStyleType: 'none',
+            textDecoration: 'none'
+        })}
+        to={"/"}><li>Home</li></NavLink>
         <li>
           <span onClick={handleSubmenuClick}>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div className={`${styles[`${dropDownContainerClass}`]}`} >
@@ -88,8 +101,28 @@ const Navbar = () => {
              )}
           </div>
         </li>
-        <li>About</li>
-        <li>Contact</li>
+        <NavLink 
+        style={({ isActive }) => ({
+            color: isActive
+            ? "grey"
+            : "black",
+            listStyleType: 'none',
+            textDecoration: 'none'
+        })}
+        to={"/about"}>
+          <li>About</li>
+        </NavLink>
+        <NavLink 
+        style={({ isActive }) => ({
+            color: isActive
+                ? "grey"
+                : "black",
+            listStyleType: 'none',
+            textDecoration: 'none'
+        })}
+        to={"/contact"}>
+          <li>Contact</li>
+        </NavLink>
       </ul>
     </div>
   );
