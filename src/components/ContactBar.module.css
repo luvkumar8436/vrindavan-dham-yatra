@@ -15,13 +15,17 @@
     width: 15px;
     display: inline-block;
     margin: 2px 5px;
+    position: relative;
 }
 .container .number {
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-name: slide-in;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
     padding: 2px 0;
     color: white;
+    position: absolute;
+    margin: auto;
   }
   
   .container .number:hover {
@@ -30,11 +34,12 @@
   
   @keyframes slide-in {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(0);
     }
     
     100%{
-        transform: translateX(100vw);
+        transform: translateX(calc(100vw - 370px));
+
     }
   }
   
