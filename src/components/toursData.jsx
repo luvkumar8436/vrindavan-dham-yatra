@@ -6,8 +6,19 @@ import taj from './images/taj.jpg'
 import agrafort from './images/pexels-kabita-darlami-16871795-819x1024.jpg'
 import indiaGate from './images/indiaGate.webp'
 import haridwar from './images/haridwar-01.jpg'
-import akshardham from './images/41724497151854.jpg'
-
+import fatherpurSikri from './images/fatehpur-sikri.jpg'
+import lotusTemple from './images/lotus-temple.jpg'
+import jamaMasjid from './images/jama-masjid.jpg'
+import jaipurFort from './images/fort.jpeg'
+import hawaMahal from './images/hawa-mahal.jpeg'
+import jodhpurPic from './images/jodhpur.jpeg'
+import mehrangarhFort from './images/mehrangarh-fort.jpeg'
+import desert from './images/desert.jpg'
+import manali from './images/manali.jpeg'
+import shimla from './images/shimla.jpg'
+import ramMandir from './images/ayodhya-ram-mandir.jpg'
+import ayodhya from './images/ayodhya.jpeg'
+import masoorie from './images/masoorie.jpg'
 
 export const tourItnerayData = [
     {
@@ -2578,7 +2589,7 @@ export const data = [
         tourHeadline:"3 Days Agra and Mathura Trip",
         tourPlaces:"Agra-Mathura-Vrindavan-Gokul-Goverdhan-Barsana",
         rating: `5 (234)`,
-        image:agrafort,
+        image:fatherpurSikri,
         duration:"3 Days & 2 Night",
         tourData: tourItnerayData[5]
     },
@@ -2594,7 +2605,7 @@ export const data = [
         tourHeadline:"2 Days Delhi & Agra Trip",
         tourPlaces:"Delhi-Agra",
         rating: `5 (189)`,
-        image:indiaGate,
+        image:lotusTemple,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[7]
     },
@@ -2602,7 +2613,7 @@ export const data = [
         tourHeadline:"3 Days Delhi Mathura and Agra Trip",
         tourPlaces:"Delhi-Agra-Mathura",
         rating: `5 (189)`,
-        image:indiaGate,
+        image:jamaMasjid,
         duration:"3 Days & 2 Night",
         tourData: tourItnerayData[8]
     },
@@ -2618,7 +2629,7 @@ export const data = [
         tourHeadline:"One Day Jaipur Trip",
         tourPlaces:"Jaipur",
         rating: `5 (234)`,
-        image:taj,
+        image:jaipurFort,
         duration:"1 Day",
         tourData: tourItnerayData[9] 
     },
@@ -2626,7 +2637,7 @@ export const data = [
         tourHeadline:"Two Days Jaipur Trip",
         tourPlaces:"Jaipur",
         rating: `5 (234)`,
-        image:taj,
+        image:hawaMahal,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[11]
     },
@@ -2634,7 +2645,7 @@ export const data = [
         tourHeadline:"One Day Jodhpur Trip",
         tourPlaces:"Jodhpur",
         rating: `5 (234)`,
-        image:taj,
+        image:jodhpurPic,
         duration:"1 Day",
         tourData: tourItnerayData[12] 
     },
@@ -2642,7 +2653,7 @@ export const data = [
         tourHeadline:"Two Days Jodhpur Trip",
         tourPlaces:"Jodhpur",
         rating: `5 (123)`,
-        image:taj,
+        image:mehrangarhFort,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[13] 
     },
@@ -2650,7 +2661,7 @@ export const data = [
         tourHeadline:"Two Days Rajasthan Trip",
         tourPlaces:"Jaipur-Pushkar",
         rating: `5 (249)`,
-        image:taj,
+        image:desert,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[14] 
     },
@@ -2658,7 +2669,7 @@ export const data = [
         tourHeadline:"Two Days Manali Trip",
         tourPlaces:"Manali-Solang-Rohtang",
         rating: `5 (249)`,
-        image:taj,
+        image:manali,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[15] 
     },
@@ -2666,7 +2677,7 @@ export const data = [
         tourHeadline:"Three Days Shimla Manali Trip",
         tourPlaces:"Manali-Shimla",
         rating: `5 (249)`,
-        image:taj,
+        image:shimla,
         duration:"3 Days & 2 Night",
         tourData: tourItnerayData[16] 
     },
@@ -2674,7 +2685,7 @@ export const data = [
         tourHeadline:"One Day Ayodhya Trip",
         tourPlaces:"Ayodhya",
         rating: `5 (119)`,
-        image:taj,
+        image:ramMandir,
         duration:"1 Day",
         tourData: tourItnerayData[17] 
     },
@@ -2682,7 +2693,7 @@ export const data = [
         tourHeadline:"Two Days Ayodhya Trip",
         tourPlaces:"Ayodhya",
         rating: `5 (119)`,
-        image:taj,
+        image:ayodhya,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[18] 
     },
@@ -2690,7 +2701,7 @@ export const data = [
         tourHeadline:"Two Days Dehradun Trip",
         tourPlaces:"Dehradun",
         rating: `4 (145)`,
-        image:indiaGate,
+        image:masoorie,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[19]
     },
@@ -2701,13 +2712,5 @@ export const data = [
         image:haridwar,
         duration:"2 Days & 1 Night",
         tourData: tourItnerayData[20]
-    },
-    {
-        tourHeadline:"2 Days Delhi & Agra",
-        tourPlaces:"Delhi-Agra",
-        rating: `4.6 (123)`,
-        image:akshardham,
-        duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[0]
     },
 ];
