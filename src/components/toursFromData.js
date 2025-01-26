@@ -1,4 +1,16 @@
 import prem_mandir_img from './images/prem-mandir-night.jpg'
+import AgraFort from './images/Jahangiri-Mahal-Agra-Fort.jpg'
+import tajMahal from './images/taj-mahal.jpg'
+import indiaGate2 from './images/india-gate-view.jpg'
+import rajPath from './images/Rajpath-delhi.jpg'
+import akshardham from './images/akshardham-temple-delhi-hero.jpeg'
+import gangaGhat from './images/ganga-ghat-haridwar-uttarakhand.jpeg'
+import ganga2 from './images/ganga-boat.webp'
+// import { duration } from "@mui/material";
+import kirti_mandir_img from './images/kirti-mandir.jpeg'
+import parikrama from './images/parikrama.jpg'
+
+
 export const locations = [
     "Banglore",
     "Hyderabad",
@@ -1092,6 +1104,23 @@ for(let i=0;i<locations.length;i++){
         image:prem_mandir_img,
         duration:"3 Days & 2 Nights",
         tourData: MathuraVrindavaTour(location),
+        carouselImages: [
+            {
+                index: 1,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+                index: 2,
+                name: parikrama,
+                alt: "vrindavan parikrama" 
+            },
+            {
+                index: 3,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            }
+        ]
     })
     fromData.push({
         tourHeadline:`Mathura Vrindavan and Agra Tour From ${location}`,
@@ -1101,6 +1130,28 @@ for(let i=0;i<locations.length;i++){
         image:prem_mandir_img,
         duration:"5 Days & 4 Nights",
         tourData: MathuraVrindavanAgra(location),
+        carouselImages: [
+            {
+                index: 2,
+                name: tajMahal,
+                alt: "taj mahal" 
+            },
+            {
+                index: 3,
+                name: AgraFort,
+                alt: "agra fort"
+            },
+            {
+                index: 4,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+                index: 5,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            }
+        ]
     })
     fromData.push({
         tourHeadline:`Mathura Vrindavan Agra and Delhi Tour From ${location}`,
@@ -1109,7 +1160,44 @@ for(let i=0;i<locations.length;i++){
         rating: `5 (91)`,
         image:prem_mandir_img,
         duration:"6 Days & 5 Nights",
-        tourData: MathuraVrindavanAgraDelhi(location)
+        tourData: MathuraVrindavanAgraDelhi(location),
+        carouselImages: [
+            {
+                index: 1,
+                name: tajMahal,
+                alt: "taj mahal" 
+            },
+            {
+                index: 2,
+                name: AgraFort,
+                alt: "agra fort"
+            },
+            {
+                index: 3,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+                index: 4,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            },
+            {
+                index: 5,
+                name: akshardham,
+                alt : "akshar dham"
+            },
+            {
+                index: 6,
+                name: indiaGate2,
+                alt: "india gate" 
+            },
+            {
+                index: 7,
+                name: rajPath,
+                alt: "raj path"
+            }
+        ]
     })
     fromData.push({
         tourHeadline: `Mathura Vrindavan Haridwar and Rishikesh Tour From ${location}`,
@@ -1118,6 +1206,28 @@ for(let i=0;i<locations.length;i++){
         rating: `5 (112)`,
         image:prem_mandir_img,
         duration:"5 Days & 4 Nights",
-        tourData: MathuraVrindavanHaridwarRishikesh(location)
+        tourData: MathuraVrindavanHaridwarRishikesh(location),
+        carouselImages: [
+            {
+                index: 1,
+                name: gangaGhat,
+                alt : "ganga ghat"
+            },
+            {
+                index: 2,
+                name: ganga2,
+                alt: "ganga ghat view"
+            },
+            {
+                index: 3,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+                index: 4,
+                name: parikrama,
+                alt: "vrindavan parikrama" 
+            },
+        ]
     })
 }

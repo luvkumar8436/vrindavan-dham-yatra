@@ -26,6 +26,7 @@ const PackageFromPage = () => {
                         duration={item.duration}
                         tourData={item.tourData}
                         key={key}
+                        carouselImages={item.carouselImages}
                         />
                     
                     ) }

@@ -15,7 +15,7 @@ const Package = (props) => {
                 <div className={styles["tour-subinfo-container"]}>
                     <div className={styles["tour-places"]} >{props.tourPlaces}</div>
                     <Link to={"/contact"} ><button className={styles["enquiry"]}  text="">Enquire Now</button></Link>
-                    <Link to={props.packageLink +props.tourHeadline.split(" ").join("-") } state={{ duration: props.duration , places: props.tourPlaces , tourData: props.tourData}} > <button className={styles["info"]}>Know More</button></Link>
+                    <Link to={props.packageLink +props.tourHeadline.split(" ").join("-") } state={{ duration: props.duration , places: props.tourPlaces , tourData: props.tourData , carouselImages: props.carouselImages}} > <button className={styles["info"]}>Know More</button></Link>
                 </div>  
             </div>
         </div>

@@ -19,6 +19,40 @@ import shimla from './images/shimla.jpg'
 import ramMandir from './images/ayodhya-ram-mandir.jpg'
 import ayodhya from './images/ayodhya.jpeg'
 import masoorie from './images/masoorie.jpg'
+import premmandir from './images/prem-mandir7.jpg'
+import kirtimandir from './images/indian-temple-g085a80a15_1920-1.jpg'
+import AgraFort from './images/Jahangiri-Mahal-Agra-Fort.jpg'
+import barsana from './images/free-photo-of-people-at-shri-radha-rani-temple-in-barsana.jpeg'
+import RedFortAgra from './images/fort-agra.jpg'
+import tajMahal from './images/taj-mahal.jpg'
+import nahargarhFort from './images/Nahargarh-Fort-jaipur.jpg'
+import hawaMahal2 from './images/hawa-mahal.jpg'
+import albertHall from './images/albert-hall-jaipur.jpeg'
+import cityWallJaipur from './images/UNESCO_WORLD_HERITAGE_CENTRE-JAIPUR_CITY-RAJASTHAN.jpg'
+import jodhpur from './images/JODHPUR.webp'
+import jodhpur2 from './images/jodhpur-hero.jpeg'
+import MehrangarhFortJodhpur from './images/Mehrangarh_Fort_sanhita.jpg'
+import humyanuTomb from './images/humayuns-tomb-delhi.jpeg'
+import indiaGate2 from './images/india-gate-view.jpg'
+import rajPath from './images/Rajpath-delhi.jpg'
+import akshardham from './images/akshardham-temple-delhi-hero.jpeg'
+import ayodhyaGhat from './images/Ayodhya-Sightseeing-Spots_.webp'
+import ayodhyaDiwali from './images/deepotsav-ayodhya.webp'
+import ramMandir2 from './images/Ayodhya_Ram_Mandir_Inauguration_Day_Picture.jpg'
+import ayodhyaGhat2 from './images/ayodhya-ghat.webp'
+import manaliCity from './images/Manali_City.jpg'
+import manaliView from './images/manali-hill-station.jpeg'
+import manaliSnowfall from './images/manali-snowfall.jpg'
+import shimlaView from './images/cityscape-of-shimla-himachal-pradesh-city-1-hero.jpeg'
+import shimlaSnow from './images/shimla-snow.jpg'
+import sanglaValley from './images/sangla-valley-shimla-himachal-pradesh.jpeg'
+import gangaGhat from './images/ganga-ghat-haridwar-uttarakhand.jpeg'
+import ganga2 from './images/ganga-boat.webp'
+import harkipaudi from './images/harki-paidi.webp'
+import birlaGhat from './images/birla-ghat-haridwar.jpeg'
+import FRI from './images/FRI.jpg'
+import sahastradhara from './images/sahastradhara-dehradun-3.jpg'
+import robberCave from './images/Robbers-Caves-Cover.jpg'
 
 export const tourItnerayData = [
     {
@@ -2551,7 +2585,24 @@ export const data = [
         rating: `5 (121)`,
         image:prem_mandir_img,
         duration:"1 Day",
-        tourData: tourItnerayData[0]
+        tourData: tourItnerayData[0],
+        carouselImages: [
+            {
+                index: 1,
+                name: premmandir,
+                alt : "prem mandir"
+            },
+            {
+               index: 2,
+               name: kirtimandir,
+               alt: "kirti mandir" 
+            },
+            {
+                index: 3,
+                name: barsana,
+                alt: "barsana village"
+            }
+        ]
     },
     {
         tourHeadline:"Weekend Special Brij Darshan",
@@ -2559,7 +2610,24 @@ export const data = [
         rating: `5 (220)`,
         image:kirti_mandir_img,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[1]
+        tourData: tourItnerayData[1],
+        carouselImages: [
+            {
+                index: 1,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+               index: 2,
+               name: parikrama,
+               alt: "vrindavan parikrama" 
+            },
+            {
+                index: 3,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            }
+        ]
     },
     {
         tourHeadline:"Sampoorna Brij Darshan",
@@ -2567,7 +2635,24 @@ export const data = [
         rating: `5 (342)`,
         image:parikrama,
         duration:"3 Days & 2 Night",
-        tourData: tourItnerayData[2]
+        tourData: tourItnerayData[2],
+        carouselImages: [
+            {
+                index: 1,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+               index: 2,
+               name: parikrama,
+               alt: "vrindavan parikrama" 
+            },
+            {
+                index: 3,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            }
+        ]
     },
     {
         tourHeadline:"Two Days Taj and Agra Trip",
@@ -2575,7 +2660,24 @@ export const data = [
         rating: `5 (234)`,
         image:taj,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[3]
+        tourData: tourItnerayData[3],
+        carouselImages: [
+            {
+                index: 1,
+                name: RedFortAgra,
+                alt : "red fort agra"
+            },
+            {
+               index: 2,
+               name: tajMahal,
+               alt: "taj mahal" 
+            },
+            {
+                index: 3,
+                name: AgraFort,
+                alt: "agra fort"
+            }
+        ]
     },
     {
         tourHeadline:"2 Days Agra and Mathura Trip",
@@ -2583,7 +2685,29 @@ export const data = [
         rating: `5 (234)`,
         image:agrafort,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[4]
+        tourData: tourItnerayData[4],
+        carouselImages: [
+            {
+               index: 2,
+               name: tajMahal,
+               alt: "taj mahal" 
+            },
+            {
+                index: 3,
+                name: AgraFort,
+                alt: "agra fort"
+            },
+            {
+                index: 4,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+                index: 5,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            }
+        ]
     },
     {
         tourHeadline:"3 Days Agra and Mathura Trip",
@@ -2591,7 +2715,29 @@ export const data = [
         rating: `5 (234)`,
         image:fatherpurSikri,
         duration:"3 Days & 2 Night",
-        tourData: tourItnerayData[5]
+        tourData: tourItnerayData[5],
+        carouselImages: [
+            {
+               index: 2,
+               name: tajMahal,
+               alt: "taj mahal" 
+            },
+            {
+                index: 3,
+                name: AgraFort,
+                alt: "agra fort"
+            },
+            {
+                index: 4,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+                index: 5,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            }
+        ]
     },
     {
         tourHeadline:"2 Days Delhi Trip",
@@ -2599,7 +2745,24 @@ export const data = [
         rating: `5 (189)`,
         image:indiaGate,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[6]
+        tourData: tourItnerayData[6],
+        carouselImages: [
+            {
+                index: 1,
+                name: humyanuTomb,
+                alt : "humyanu tomb"
+            },
+            {
+               index: 2,
+               name: indiaGate2,
+               alt: "india gate" 
+            },
+            {
+                index: 3,
+                name: rajPath,
+                alt: "raj path"
+            }
+        ]
     },
     {
         tourHeadline:"2 Days Delhi & Agra Trip",
@@ -2607,7 +2770,34 @@ export const data = [
         rating: `5 (189)`,
         image:lotusTemple,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[7]
+        tourData: tourItnerayData[7],
+        carouselImages: [
+            {
+               index: 1,
+               name: tajMahal,
+               alt: "taj mahal" 
+            },
+            {
+                index: 2,
+                name: AgraFort,
+                alt: "agra fort"
+            },
+            {
+                index: 3,
+                name: akshardham,
+                alt : "akshar dham"
+            },
+            {
+                index: 4,
+                name: indiaGate2,
+                alt: "india gate" 
+             },
+             {
+                 index: 5,
+                 name: rajPath,
+                 alt: "raj path"
+             }
+        ]
     },
     {
         tourHeadline:"3 Days Delhi Mathura and Agra Trip",
@@ -2615,7 +2805,44 @@ export const data = [
         rating: `5 (189)`,
         image:jamaMasjid,
         duration:"3 Days & 2 Night",
-        tourData: tourItnerayData[8]
+        tourData: tourItnerayData[8],
+        carouselImages: [
+            {
+                index: 1,
+                name: tajMahal,
+                alt: "taj mahal" 
+            },
+            {
+                index: 2,
+                name: AgraFort,
+                alt: "agra fort"
+            },
+            {
+                index: 3,
+                name: prem_mandir_img,
+                alt : "prem mandir"
+            },
+            {
+                index: 4,
+                name: kirti_mandir_img,
+                alt: "kirti mandir"
+            },
+            {
+                index: 5,
+                name: akshardham,
+                alt : "akshar dham"
+            },
+            {
+               index: 6,
+               name: indiaGate2,
+               alt: "india gate" 
+            },
+            {
+                index: 7,
+                name: rajPath,
+                alt: "raj path"
+            }
+        ]
     },
     {
         tourHeadline:"One Day Taj Mahal and Agra Trip",
@@ -2623,7 +2850,24 @@ export const data = [
         rating: `5 (234)`,
         image:taj,
         duration:"1 Day",
-        tourData: tourItnerayData[10]
+        tourData: tourItnerayData[10],
+        carouselImages: [
+            {
+               index: 1,
+               name: tajMahal,
+               alt: "taj mahal" 
+            },
+            {
+                index: 2,
+                name: RedFortAgra,
+                alt : "red fort agra"
+            },
+            {
+                index: 3,
+                name: AgraFort,
+                alt: "agra fort"
+            }
+        ]
     },
     {
         tourHeadline:"One Day Jaipur Trip",
@@ -2631,7 +2875,24 @@ export const data = [
         rating: `5 (234)`,
         image:jaipurFort,
         duration:"1 Day",
-        tourData: tourItnerayData[9] 
+        tourData: tourItnerayData[9],
+        carouselImages: [
+            {
+                index: 1,
+                name: nahargarhFort,
+                alt : "nahargarh fort"
+            },
+            {
+               index: 2,
+               name: hawaMahal2,
+               alt: "hawa mahal jaipur" 
+            },
+            {
+                index: 3,
+                name: albertHall,
+                alt: "albert hall jaipur"
+            }
+        ] 
     },
     {
         tourHeadline:"Two Days Jaipur Trip",
@@ -2639,7 +2900,29 @@ export const data = [
         rating: `5 (234)`,
         image:hawaMahal,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[11]
+        tourData: tourItnerayData[11],
+        carouselImages: [
+            {
+                index: 1,
+                name: cityWallJaipur,
+                alt : "city wall jaipur"
+            },
+            {
+               index: 2,
+               name: hawaMahal2,
+               alt: "hawa mahal jaipur" 
+            },
+            {
+                index: 3,
+                name: albertHall,
+                alt: "albert hall jaipur"
+            },
+            {
+               index: 4,
+               name: nahargarhFort,
+               alt : "nahargarh fort"
+            },
+        ]
     },
     {
         tourHeadline:"One Day Jodhpur Trip",
@@ -2647,7 +2930,24 @@ export const data = [
         rating: `5 (234)`,
         image:jodhpurPic,
         duration:"1 Day",
-        tourData: tourItnerayData[12] 
+        tourData: tourItnerayData[12],
+        carouselImages: [
+            {
+                index: 1,
+                name: jodhpur,
+                alt : "jodhpur view"
+            },
+            {
+               index: 2,
+               name: jodhpur2,
+               alt: "jodhpur city view" 
+            },
+            {
+                index: 3,
+                name: MehrangarhFortJodhpur,
+                alt: "mehrangarh Fort jaipur"
+            }
+        ] 
     },
     {
         tourHeadline:"Two Days Jodhpur Trip",
@@ -2655,7 +2955,24 @@ export const data = [
         rating: `5 (123)`,
         image:mehrangarhFort,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[13] 
+        tourData: tourItnerayData[13],
+        carouselImages: [
+            {
+                index: 1,
+                name: jodhpur,
+                alt : "jodhpur view"
+            },
+            {
+               index: 2,
+               name: jodhpur2,
+               alt: "jodhpur city view" 
+            },
+            {
+                index: 3,
+                name: MehrangarhFortJodhpur,
+                alt: "mehrangarh Fort jaipur"
+            }
+        ] 
     },
     {
         tourHeadline:"Two Days Rajasthan Trip",
@@ -2663,7 +2980,39 @@ export const data = [
         rating: `5 (249)`,
         image:desert,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[14] 
+        tourData: tourItnerayData[14],
+        carouselImages: [
+            {
+               index: 1,
+               name: jodhpur2,
+               alt: "jodhpur city view" 
+            },
+            {
+                index: 2,
+                name: MehrangarhFortJodhpur,
+                alt: "mehrangarh Fort jaipur"
+            },
+            {
+                index: 3,
+                name: cityWallJaipur,
+                alt : "city wall jaipur"
+            },
+            {
+               index: 4,
+               name: hawaMahal2,
+               alt: "hawa mahal jaipur" 
+            },
+            {
+                index: 5,
+                name: albertHall,
+                alt: "albert hall jaipur"
+            },
+            {
+               index: 6,
+               name: nahargarhFort,
+               alt : "nahargarh fort"
+            },
+        ] 
     },
     {
         tourHeadline:"Two Days Manali Trip",
@@ -2671,7 +3020,24 @@ export const data = [
         rating: `5 (249)`,
         image:manali,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[15] 
+        tourData: tourItnerayData[15],
+        carouselImages: [
+            {
+                index: 1,
+                name: manaliCity,
+                alt : "manali city view"
+            },
+            {
+               index: 2,
+               name: manaliView,
+               alt: "manali city view" 
+            },
+            {
+                index: 3,
+                name: manaliSnowfall,
+                alt: "manali snow fall"
+            }
+        ] 
     },
     {
         tourHeadline:"Three Days Shimla Manali Trip",
@@ -2679,7 +3045,34 @@ export const data = [
         rating: `5 (249)`,
         image:shimla,
         duration:"3 Days & 2 Night",
-        tourData: tourItnerayData[16] 
+        tourData: tourItnerayData[16],
+        carouselImages: [
+            {
+                index: 1,
+                name: shimlaView,
+                alt : "shimla view"
+            },
+            {
+               index: 2,
+               name: shimlaSnow,
+               alt: "shimla snowfall view" 
+            },
+            {
+                index: 3,
+                name: sanglaValley,
+                alt: "sangla valley shimla"
+            },
+            {
+                index: 4,
+                name: manaliView,
+                alt: "manali city view" 
+             },
+             {
+                 index: 5,
+                 name: manaliSnowfall,
+                 alt: "manali snow fall"
+             }
+        ] 
     },
     {
         tourHeadline:"One Day Ayodhya Trip",
@@ -2687,7 +3080,24 @@ export const data = [
         rating: `5 (119)`,
         image:ramMandir,
         duration:"1 Day",
-        tourData: tourItnerayData[17] 
+        tourData: tourItnerayData[17],
+        carouselImages: [
+            {
+                index: 1,
+                name: ramMandir2,
+                alt: "ram mandir view"
+            },
+            {
+               index: 2,
+               name: ayodhyaDiwali,
+               alt: "ayodhya diwali celebration" 
+            },
+            {
+                index: 3,
+                name: ayodhyaGhat,
+                alt : "ayodhya ghat view"
+            }
+        ] 
     },
     {
         tourHeadline:"Two Days Ayodhya Trip",
@@ -2695,7 +3105,29 @@ export const data = [
         rating: `5 (119)`,
         image:ayodhya,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[18] 
+        tourData: tourItnerayData[18],
+        carouselImages: [
+            {
+                index: 1,
+                name: ayodhyaGhat2,
+                alt : "ayodhya ghat"
+            },
+            {
+                index: 2,
+                name: ramMandir2,
+                alt: "ram mandir view"
+            },
+            {
+               index: 3,
+               name: ayodhyaDiwali,
+               alt: "ayodhya diwali celebration" 
+            },
+            {
+                index: 4,
+                name: ayodhyaGhat,
+                alt : "ayodhya ghat view"
+            }
+        ] 
     },
     {
         tourHeadline:"Two Days Dehradun Trip",
@@ -2703,7 +3135,24 @@ export const data = [
         rating: `4 (145)`,
         image:masoorie,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[19]
+        tourData: tourItnerayData[19],
+        carouselImages: [
+            {
+                index: 1,
+                name: FRI,
+                alt : "forest reseach institute dehradun"
+            },
+            {
+               index: 2,
+               name: sahastradhara,
+               alt: "sahastra dhara" 
+            },
+            {
+                index: 3,
+                name: robberCave,
+                alt: "robber cave"
+            }
+        ]
     },
     {
         tourHeadline:"Two Days Haridwar and Rishikesh Trip",
@@ -2711,6 +3160,28 @@ export const data = [
         rating: `4.6 (121)`,
         image:haridwar,
         duration:"2 Days & 1 Night",
-        tourData: tourItnerayData[20]
+        tourData: tourItnerayData[20],
+        carouselImages: [
+            {
+                index: 1,
+                name: gangaGhat,
+                alt : "ganga ghat"
+            },
+            {
+               index: 2,
+               name: harkipaudi,
+               alt: "har ki paudi haridwar" 
+            },
+            {
+                index: 3,
+                name: birlaGhat,
+                alt: "birla ghat haridwar"
+            },
+            {
+                index: 4,
+                name: ganga2,
+                alt: "ganga ghat view"
+            }
+        ]
     },
 ];

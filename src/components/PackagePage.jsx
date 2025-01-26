@@ -15,22 +15,22 @@ const PackagePage = () => {
     const locationURL = location.pathname.split("/")[1].split("-");
     console.log(location)
     console.log(locationURL)
-    let duration , places, tourData;
+    let duration , places, tourData, carouselImages;
     if (location.state === null) { 
         // console.log(data.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" ")))
         if (locationURL[0] === "tour" && locationURL[1] === "packages" && locationURL[2] === "from"){
-            ({duration, tourPlaces:places , tourData} = fromData.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" "))[0] );
+            ({duration, tourPlaces:places , tourData , carouselImages} = fromData.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" "))[0] );
         }else{
-            ({duration, tourPlaces:places , tourData} = data.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" "))[0] );
+            ({duration, tourPlaces:places , tourData , carouselImages} = data.filter( data_obj => data_obj.tourHeadline === packageName.split("-").join(" "))[0] );
         }
         // console.log(duration, places , tourData);
     }else{
-        ({duration , places, tourData} = location.state);
+        ({duration , places, tourData, carouselImages } = location.state);
     }
     return (
         <div>
             <div className={styles["package-page-container"]}>
-                <DemoCarousel />
+                <DemoCarousel carouselImages={carouselImages}/>
                 
                 <div className={styles["form-container"]}>
                     <CallbackForm text="Request Call"/>

@@ -86,7 +86,7 @@ const Navbar = () => {
         <li>
           <span onClick={handleSubmenuClick}>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div className={`${styles[`${dropDownContainerClass}`]}`} >
-          {  data.map(  obj  => <Link to={"/tourist-packages/"+obj.tourHeadline.split(" ").join("-") } state={{ duration: obj.duration , places: obj.tourPlaces, tourData: obj.tourData }} ><p >{obj.tourHeadline}</p></Link> ) }
+          {  data.map(  obj  => <Link to={"/tourist-packages/"+obj.tourHeadline.split(" ").join("-") } state={{ duration: obj.duration , places: obj.tourPlaces, tourData: obj.tourData , carouselImages: obj.carouselImages }} ><p >{obj.tourHeadline}</p></Link> ) }
           </div>
         </li>
         <li >
