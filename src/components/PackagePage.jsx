@@ -8,8 +8,14 @@ import CallbackForm from "./CallbackForm";
 // import { tourItnerayData } from "./toursData";
 import { data } from "./toursData";
 import { fromData } from './toursFromData'
+import { useEffect } from "react";
 
 const PackagePage = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+      },[])
+
     let {packageName} = useParams();
     const location = useLocation();
     const locationURL = location.pathname.split("/")[1].split("-");

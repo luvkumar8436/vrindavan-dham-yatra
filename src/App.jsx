@@ -13,6 +13,7 @@ import {locations} from "./components/toursFromData.js"
 import CallbackForm from './components/CallbackForm.jsx';
 import "./App.css"
 import ContactBar from './components/ContactBar.jsx';
+import ContactUs from './components/ContactUs.jsx';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<About />} />
           {/* <Route path="/famous-temples/:templeName" element={<FamousTemples />} /> */}
           <Route path="/tourist-packages/:packageName" element={<PackagePage />} />
+          <Route path="/contact" element={<ContactUs />} />
           {
             locations.map(
               location => (
