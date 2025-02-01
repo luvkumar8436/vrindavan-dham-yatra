@@ -19,10 +19,15 @@ const Navbar = () => {
   function handleNavClick(event){
     setOpen(!isOpen);
     if(isOpen===true){
-      console.log(event)
       event.target.parentNode.parentNode.childNodes[2].childNodes[2].childNodes[1].style.display = "";
       event.target.parentNode.parentNode.childNodes[2].childNodes[3].childNodes[1].style.display = "";
     }
+  }
+
+  function closeDropDown(event){
+    console.log("event " , event)
+    event.target.parentNode.parentNode.style.display = "";
+    setOpen(false);
   }
 
   function handleSubmenuClick(event){
@@ -40,16 +45,7 @@ const Navbar = () => {
     }else{
       style.display = "";
     }
-    // console.log(event.target.value); 
-    // console.log(event.target.parentElement.parentElement.childNodes[1]);
-    // const style = event.target.parentElement.parentElement.childNodes[1].style;
-    // if(style.display===""){
-    //   style.display = "block";
-    // }else{
-    //   style.display = "None";
-    // }
 
-    // console.log(event.target.parentElement.parentElement.childNodes[1])
   }
 
   return (
@@ -84,18 +80,18 @@ const Navbar = () => {
         })}
         to={"/"}><li>Home</li></NavLink>
         <li>
-          <span onClick={handleSubmenuClick}>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
+          <span onTouchStart={handleSubmenuClick}>Packages<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div className={`${styles[`${dropDownContainerClass}`]}`} >
-          {  data.map(  obj  => <Link to={"/tourist-packages/"+obj.tourHeadline.split(" ").join("-") } state={{ duration: obj.duration , places: obj.tourPlaces, tourData: obj.tourData , carouselImages: obj.carouselImages }} ><p >{obj.tourHeadline}</p></Link> ) }
+          {  data.map(  obj  => <Link to={"/tourist-packages/"+obj.tourHeadline.split(" ").join("-") } state={{ duration: obj.duration , places: obj.tourPlaces, tourData: obj.tourData , carouselImages: obj.carouselImages }} ><p onClick={closeDropDown} >{obj.tourHeadline}</p></Link> ) }
           </div>
         </li>
         <li >
-          <span onClick={handleSubmenuClick} >Packages From<div className={[styles["arrow"]]}>&#10095;</div></span>
+          <span onTouchStart={handleSubmenuClick} >Packages From<div className={[styles["arrow"]]}>&#10095;</div></span>
           <div  className={`${styles[`${dropDownContainerClass}`]}`} >
             {locations.map( location => 
               (
                 <>
-                  <Link to={`/tour-packages-from-${location.toLowerCase()}/`} > <p>{`${location}`}</p> </Link>
+                  <Link to={`/tour-packages-from-${location.toLowerCase()}/`} > <p onClick={closeDropDown}>{`${location}`}</p> </Link>
                 </>
               )
              )}

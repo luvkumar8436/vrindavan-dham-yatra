@@ -22,7 +22,6 @@ function App() {
         <ContactBar />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           {/* <Route path="/famous-temples/:templeName" element={<FamousTemples />} /> */}
           <Route path="/tourist-packages/:packageName" element={<PackagePage />} />
@@ -37,6 +36,7 @@ function App() {
               )
             )
           }
+          <Route path="/" element={<Home />} />
         </Routes>
         <div className="callback">
           <CallbackForm text="Contact Us" />
